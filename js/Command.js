@@ -147,25 +147,25 @@ var info = [
 
     '<span class="command">Navigate through my portfolio is very simple, just enter the corresponding command from the list below:</span>',
     '<br>',
-    '<span class="command">about-me</span> Who am I ?',
+    '<span class="command">About-me</span> Who am I ?',
     '<br>',
-    '<span class="command">projets</span> Want to see some of my realisations ?',
+    '<span class="command">Projects</span> Want to see some of my realisations ?',
     '<br>',
     '<span class="command">Formations</span> What is my educational background ?',
     '<br>',
-    '<span class="command">social</span> Take a look of my social media',
+    '<span class="command">Social</span> Take a look of my social media',
     '<br>',
-    '<span class="command">contact</span> Want to contact me ?',
+    '<span class="command">Contact</span> Want to contact me ?',
     '<br>',
     '<span class="command">FAQ</span> Answering a lot of question you will ask about me',
     '<br>',
     '<span class="command">Certifications</span> The formation that i got.',
     '<br>',
-    '<span class="command">my-motivation</span> What are my motivations and value to do what i do',
+    '<span class="command">My-motivation</span> What are my motivations and value to do what i do',
     '<br>',
-    '<span class="command">the-future</span> Future Plans',
+    '<span class="command">The-future</span> Future Plans',
     '<br>',
-    '<span class="command">personality</span> My personality and character traits.'
+    '<span class="command">Personality</span> My personality and character traits.'
 ]
 
 var certifications =

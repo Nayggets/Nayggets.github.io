@@ -1,0 +1,179 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.command{
+    color: lime;
+    font-size: 18px;
+}
+
+#Question{
+    color: lime;
+    font-size: 18px;
+}
+
+#Topic{
+    color: red;
+    font-size: 18px;
+}
+
+body, h1,h2,h3, p{
+    margin:0;
+    padding:0;
+}
+
+
+body{
+    font-family: 'Roboto Mono', monospace;
+    background: black;
+    padding: 12px;
+    overflow-y: auto;
+    resize: none;
+    border: none;
+    font-size: 10px;
+    line-height: 28px;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    color: aqua;
+}
+
+.title{
+    font-family: 'Roboto Mono', monospace;
+    background: black;
+    padding: 12px;
+    overflow-y: auto;
+    resize: none;
+    border: none;
+    font-size: 10px;
+    line-height: 28px;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    color: aqua;
+}
+
+
+
+.terminalCont{
+    background: black;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto Mono', monospace;
+    opacity: 0;
+
+    animation:
+            slideDownAnimation 1s ease-in-out 1s forwards,
+            fadeInAnimation 0.8s ease-in-out 1s forwards;
+}
+
+.userEnteredText{
+    color: aqua;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    font-size: 20px;
+}
+
+
+
+#terminalResultsCont{
+    width:100%;
+    height: 875%;
+    padding: 12px;
+    overflow-y: auto;
+    resize: none;
+    border: none;
+    font-size: 14px;
+    line-height: 28px;
+    display: block;
+    color: blueviolet;
+}
+
+
+
+#terminalResultsCont a{
+    color: lime;
+    text-decoration: underline;
+    font-size: 18px;
+
+}
+
+#terminalResultsCont a:hover{
+    background-color:  purple;
+    font-size: 20px;
+}
+
+
+#terminalTextInput{
+    background: black;
+    display: block;
+    border: none;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    border-radius: 0 0 4px 4px;
+    width: 100%;
+    color: aqua;
+    padding: 18px;
+    font-size: 20px;
+    outline: none;
+    font-family: 'Roboto Mono', monospace;
+}
+
+@-webkit-keyframes fadeInAnimation {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-moz-keyframes fadeInAnimation {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-o-keyframes fadeInAnimation {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes fadeInAnimation {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-webkit-keyframes slideDownAnimation {
+    0%   { margin-top: -20px;}
+    100% { margin-top: 0;}
+}
+@-moz-keyframes slideDownAnimation {
+    0%   { margin-top: -20px;}
+    100% { margin-top: 0;}
+}
+@-o-keyframes slideDownAnimation {
+    0%   { margin-top: -20px;}
+    100% { margin-top: 0;}
+}
+@keyframes slideDownAnimation {
+    0%   { margin-top: -20px;}
+    100% { margin-top: 0;}
+}
+
+@media screen and (max-width: 1000px){
+
+    .mainCont{
+        width: 100%;
+        padding: 0 12px;
+    }
+    .mainCont h2{
+        font-size: 32px;
+        margin: 40px 0 0 0;
+    }
+    .mainCont h3{
+        font-size: 16px;
+        margin: 0 0 40px 0;
+    }
+    #terminalResultsCont{
+        height: 100px;
+    }
+
+}

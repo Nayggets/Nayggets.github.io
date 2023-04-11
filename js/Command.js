@@ -333,7 +333,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 })
                 break;
 
-            case "project":
+            case "projects":
                 clearInput();
                 projets.forEach(value =>{
                     addTextToResults(value);

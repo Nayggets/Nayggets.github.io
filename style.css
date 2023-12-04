@@ -1,3 +1,26 @@
+h1{
+    font-size: 48px;
+    color: #540D6E;
+    text-align: center;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+    background: black;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -6,17 +29,17 @@ html {
 }
 
 .command{
-    color: lime;
+    color: #8AC926;
     font-size: 18px;
 }
 
 #Question{
-    color: lime;
+    color: #8AC926;
     font-size: 18px;
 }
 
 #Topic{
-    color: red;
+    color: #FF595E;
     font-size: 18px;
 }
 
@@ -28,7 +51,6 @@ body, h1,h2,h3, p{
 
 body{
     font-family: 'Roboto Mono', monospace;
-    background: black;
     padding: 12px;
     overflow-y: auto;
     resize: none;
@@ -39,29 +61,29 @@ body{
     width: 100%;
     height: 100%;
 
-    color: aqua;
+    color: #8AC926;
 }
 
-.title{
+#title{
     font-family: 'Roboto Mono', monospace;
-    background: black;
+    background: transparent;
     padding: 12px;
     overflow-y: auto;
     resize: none;
     border: none;
     font-size: 10px;
-    line-height: 28px;
+    line-height: 18px;
     display: block;
     width: 100%;
     height: 100%;
 
-    color: aqua;
+    color: #8AC926;
 }
 
 
 
 .terminalCont{
-    background: black;
+    background: transparent;
     width: 100%;
     height: 100%;
     font-family: 'Roboto Mono', monospace;
@@ -73,7 +95,7 @@ body{
 }
 
 .userEnteredText{
-    color: aqua;
+    color: #8AC926;
     margin: 0;
     padding: 0;
     display: inline-block;
@@ -92,32 +114,32 @@ body{
     font-size: 14px;
     line-height: 28px;
     display: block;
-    color: blueviolet;
+    color: #FFCA3A;
 }
 
 
 
 #terminalResultsCont a{
-    color: lime;
+    color: #8AC926;
     text-decoration: underline;
     font-size: 18px;
 
 }
 
 #terminalResultsCont a:hover{
-    background-color:  purple;
+    background-color:  #FF595E;
     font-size: 20px;
 }
 
 
 #terminalTextInput{
-    background: black;
+    background: transparent;
     display: block;
     border: none;
     border-top: 1px solid rgba(255,255,255,0.2);
     border-radius: 0 0 4px 4px;
     width: 100%;
-    color: aqua;
+    color: #8AC926;
     padding: 18px;
     font-size: 20px;
     outline: none;

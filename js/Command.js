@@ -470,12 +470,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 })
                 break;
             }
-            case "hello":
-            case "hi":
-            case "hola":
-                clearInput();
-                addTextToResults("Hello, I am your assistant... I am based on pure JavaScript.");
-                break;
             case "help":
             case "?":
                 clearInput();

@@ -38,16 +38,16 @@ var start =
 var projets =
     [
         '<span class="command"> Project that i done on my Free Time. </span>',
-        '<a target="_blank" href="https://uther.itch.io/expanshroom">Expanshroom</a>',
-        '<span> this game was done during the GlobalGameJam</span>',
-        '<a target="_blank" href="https://github.com/Nayggets/Chip8_Emulator"> Chip8Emulator </a>',
+        '<a target="_blank" href="https://github.com/Nayggets/peer_to_peer_chat">peer_to_peer_chat</a>',
+        '<span> this is a peer to peer application use to chat with your friend</span>',
+        '<a target="_blank" href="https://github.com/Nayggets/Chip8_Emulator"> Chip8_Emulator </a>',
         '<span>I wanted to do an emulator of an old computer so i made this Chip8Emulator in C</span>',
         '<a target="_blank" href="https://github.com/Nayggets/Shell">Shell </a>',
         '<span>I made a simple shell to understand duplication of process and a lot of other complexe</span>',
-        '<a target="_blank" href="https://github.com/Nayggets/VMTranslator">VMTranslator</a>',
-        '<span>This is a VMTranslator for the language jack in the nand2tetris cours this compiler the byte code after the first step of compilation',
-        '<a target="_blank" href="https://github.com/Nayggets/Double-Snake">Double Snake</a>',
-        '<span> This game is inspired by the snake game but it\'s a 1V1 snake</span>',
+        '<a target="_blank" href="https://github.com/Nayggets/C_Compiler">C_Compiler</a>',
+        '<span>This is a C compiler not finished it can parse and lex C code</span>',
+        '<a target="_blank" href="https://github.com/Nayggets/RTOS_STM32">RTOS</a>',
+        '<span>I wanted to understand what an RTOS is and what it stand for, So i made a simple RTOS that run on stm32</span>',
         '<br>',
         '<span> And i have a lot of other project that i don\'t want reveal</span>',
         '<br>',
@@ -59,19 +59,40 @@ var email=   '<a target="_blank" href="mailto:quentin.melotte@etu.umontpellier.f
 
 var terminal =
     [ '<h1 class="toAdd">Shell</h1>',
-        '<span class="command">    Introduction:</span>',
+        '<span class="command">Introduction:</span>',
         '<span>    Undertaking a profound exploration into the mechanics of low-level programming, I embarked on a project that involved coding a shell in the C language. This project served as a pivotal journey, delving deep into the fundamental operations of operating systems.</span>',
         '<br>',
-        '<span class="command">    Description of the Project and Shell\'s Functionality:</span>',
+        '<span class="command">Description of the Project and Shell\'s Functionality:</span>',
         '<span>    The shell project was a comprehensive endeavor aiming to emulate a basic command-line interface. Its core functionalities encompassed the implementation of fork exec mechanics, the handling of piping for inter-process communication, navigation commands such as \'cd\' for file system traversal, and the ability to parse and execute Bash commands.</span>',
         '<br>',
         '<span class="command">Reason for Project Pursuit:</span>',
         '<span>    The motivation behind this project stemmed from a strong desire to grasp the intricate workings of operating systems at a granular level. By coding this shell, I aimed not only to comprehend the underlying mechanisms of process creation, execution, and communication but also to sharpen my skills in writing clean, efficient code. Moreover, the project offered a valuable opportunity to document and articulate code functionality in a clear and comprehensive manner.</span>',
         '<br>',
         '<span class="command">    Conclusion:</span>',
-        '<span>    In conclusion, this endeavor was more than just crafting a functional shell; it was an immersive learning experience. It provided insights into the nuances of low-level programming, reinforcing the significance of precision, structure, and clarity in coding practices. This project not only enhanced my technical abilities but also underscored the importance of hands-on projects in solidifying understanding and skill development in the realm of software development.</span>'
+        '<span>    In conclusion, this endeavor was more than just crafting a functional shell; it was an immersive learning experience. It provided insights into the nuances of low-level programming, reinforcing the significance of precision, structure, and clarity in coding practices. This project not only enhanced my technical abilities but also underscored the importance of hands-on projects in solidifying understanding and skill development in the realm of software development.</span>',
+        '<video class="video" controls width="676" height="460"> <source id="video" src="./ressource/Shell.webm" type="video/webm"> </video>'
+    ]
+
+var sfbp =
+    [   '<h1 class="toAdd">Secure File Backup Protocol</h1>',
+        '<span class="command">Introduction:</span>',
+        '<span>The development and conceptualization of the SFBP (Secure File Backup Protocol) stands as a significant project that I\'ve undertaken. This protocol, designed for secure file transmission to a dedicated backup server, aimed at optimizing file-related system actions such as reading, network transmission, and recursive folder operations. Built in C, both the software and protocol were crafted with the objective of enhancing my proficiency in C, understanding UNIX/Linux system standards, file naming conventions, and security protocols pertaining to backups and communications.</span>',
+        '<br>',
+        '<span class="command">Project Description</span>',
+        '<span>The SFBP is a custom-designed protocol tailored for secure and efficient file transmission to a designated backup server. The software I developed using C implements this protocol, emphasizing optimization of system actions, including efficient file handling, recursive folder traversal, and secure network transmission.</span>',
+        '<br>',
+        '<span class="command">Reasons for the Project</span>',
+        '<span>Several motivations drove the conceptualization and execution of the SFBP project: </span>',
+        '<br>',
+        '<span>Skill Enhancement in C: The project aimed to elevate my proficiency in C, particularly in optimizing system-level actions and leveraging its capabilities in handling file systems and networking.</span>',
+        '<span>Understanding System Standards: Delving into UNIX/Linux standards regarding file structures, paths, and security protocols provided insights into industry-standard practices.</span>',
+        '<span>Security and Efficiency Focus: Emphasizing security through TLS 1.3 and AES 256-bit encryption while optimizing file-related actions underscored a balanced focus on security and performance.</span>',
+        '<br>',
+        '<span class="command">Conclusion</span>',
+        '<span>The development of the SFBP protocol and its implementation within a software application has been an enriching endeavor. It significantly contributed to my understanding of C optimization techniques, UNIX/Linux system standards, and security protocols pertaining to file backups and secure communications. Leveraging TLS 1.3 and AES encryption in a client-server architecture underscored the importance of robust security measures in modern data transmission protocols. This project stands as a testament to a comprehensive exploration of system-level actions, networking, and security within the realm of software development.</span>'
 
     ]
+
 
 var chip8_emulator =
     [ '<h1 class="toAdd">Chip8 Emulator</h1>',
@@ -90,7 +111,8 @@ var chip8_emulator =
         '<span>    Personal Interest in Retro Computing: Being passionate about the history of computing and gaming, creating an environment to run programs from older systems felt rewarding and engaging.  </span>',
         '<br>',
         '<span class="command">Conclusion:</span>',
-        '<span>     The development of my Chip-8 emulator in C++ has been an incredibly enriching experience. It has allowed me to explore the depths of C++ programming, deepen my understanding of emulation, and present an intellectually stimulating challenge. This project stands as a significant milestone in my quest to expand my knowledge and proficiency in C++ programming.</span>'
+        '<span>     The development of my Chip-8 emulator in C++ has been an incredibly enriching experience. It has allowed me to explore the depths of C++ programming, deepen my understanding of emulation, and present an intellectually stimulating challenge. This project stands as a significant milestone in my quest to expand my knowledge and proficiency in C++ programming.</span>',
+        '<video class="video" controls width="666" height="504"> <source id="video" src="./ressource/Chip8Demonstration.webm" type="video/webm"> </video>'
 
     ]
 
@@ -116,10 +138,10 @@ var RTOS_ON_STM32 =
 
 var c_compiler =
     [   '<h1 class="toAdd">c_compiler(not finished)\n</h1>',
-        '<span class="command">    Introduction:</span>',
+        '<span class="command">Introduction:</span>',
         '<span>    My endeavor into developing a C compiler coded in C itself has been an illuminating journey thus far. This project began with laying the groundwork for a C compiler by building the lexer and parser for the C language. These components served as a foundational step towards understanding tokenization, lexical analysis, parsing, and comprehending the core elements of the C language and its associated toolset.  </span>',
         '<br>',
-        '<span class="command">    Description of the Project and Shell\'s Functionality:</span>',
+        '<span class="command">Description of the Project:</span>',
         '<span>    The initial phase of this project focused on constructing the lexer and parser modules, pivotal components in the compilation process. The lexer, responsible for tokenization, breaks down the source code into meaningful tokens, while the parser analyzes the tokens\' structure to create a parse tree or an abstract syntax tree.</span>',
         '<span>     By immersing myself in the intricacies of lexer and parser development, I gained a deeper insight into how compilers process source code. Understanding these fundamental stages provided me with a comprehensive understanding of lexical analysis, grammatical structures, and how programming languages are dissected and understood by compilers.</span>',
         '<span>     This project not only honed my C programming skills but also deepened my understanding of the inner workings of the C language and the tools that constitute its development ecosystem.</span>',
@@ -137,18 +159,21 @@ var c_compiler =
 
     ]
 
+
+
+
 var peer_to_peer =
-    [   '<h1 class="toAdd">Peer To Peer Chat\n</h1>',
-        '<span class="command">    Introduction:</span>',
+    [   '<h1 class="toAdd">Peer To Peer Chat (beginning state)\n</h1>',
+        '<span class="command">Introduction:</span>',
         '<span>    Undertaking a profound exploration into the mechanics of low-level programming, I embarked on a project that involved coding a shell in the C language. This project served as a pivotal journey, delving deep into the fundamental operations of operating systems.</span>',
         '<br>',
-        '<span class="command">    Description of the Project and Shell\'s Functionality:</span>',
+        '<span class="command">Description of the Project </span>',
         '<span>    The shell project was a comprehensive endeavor aiming to emulate a basic command-line interface. Its core functionalities encompassed the implementation of fork exec mechanics, the handling of piping for inter-process communication, navigation commands such as \'cd\' for file system traversal, and the ability to parse and execute Bash commands.</span>',
         '<br>',
         '<span class="command">Reason for Project Pursuit:</span>',
         '<span>    The motivation behind this project stemmed from a strong desire to grasp the intricate workings of operating systems at a granular level. By coding this shell, I aimed not only to comprehend the underlying mechanisms of process creation, execution, and communication but also to sharpen my skills in writing clean, efficient code. Moreover, the project offered a valuable opportunity to document and articulate code functionality in a clear and comprehensive manner.</span>',
         '<br>',
-        '<span class="command">    Conclusion:</span>',
+        '<span class="command">Conclusion:</span>',
         '<span>    In conclusion, this endeavor was more than just crafting a functional shell; it was an immersive learning experience. It provided insights into the nuances of low-level programming, reinforcing the significance of precision, structure, and clarity in coding practices. This project not only enhanced my technical abilities but also underscored the importance of hands-on projects in solidifying understanding and skill development in the realm of software development.</span>'
 
 
@@ -341,7 +366,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const start = document.getElementById('terminalResultsCont');
 
         checkWord(); // Do your magic and check the entered word/sentence
-        scrollToBottomOfResults();
     }
 
     // Get the focus to the text input to enter a word right away.
@@ -356,25 +380,15 @@ document.addEventListener('DOMContentLoaded', function() {
     // Clear text input
     var clearInput = function(){
         document.getElementById('terminalTextInput').value = "";
-        scrollToBottomOfResults();
 
     }
 
-    // Scrtoll to the bottom of the results div
-    var scrollToBottomOfResults = function(){
-
-        window.scrollTo(0, document.body.scrollHeight);
-        window.resizeBy(window.innerWidth,window.innerHeight);
-    }
-
-    // Scroll to the bottom of the results
-    scrollToBottomOfResults();
 
 
     // Add text to the results div
     var addTextToResults = function(textToAdd){
         document.getElementById('terminalResultsCont').innerHTML += "<p class='toAdd'>" + textToAdd + "</p>";
-        scrollToBottomOfResults();
+
     }
 
     /*
@@ -398,7 +412,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         */
 /*
-        scrollToBottomOfResults();
     }
 */
 
@@ -497,7 +510,14 @@ document.addEventListener('DOMContentLoaded', function() {
                     number++;
                 })
                 break;
-
+            case "sfbp":
+            {
+                clearInput();
+                sfbp.forEach(value => {
+                    addTextToResults(value);
+                })
+                break;
+            }
             case "projects":
                 clearInput();
                 projets.forEach(value =>{
@@ -541,7 +561,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 break;
         }
         number = 0;
-        scrollToBottomOfResults();
     }
 
 // Main function to check the entered text and assign it to the correct function
@@ -558,7 +577,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             addTextToResults("<p class='userEnteredText'>> " + textInputValue + "</p>");
             textReplies();
-            scrollToBottomOfResults();
 
         }
     };

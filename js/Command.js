@@ -48,6 +48,8 @@ var projets =
         '<span>This is a C compiler not finished it can parse and lex C code</span>',
         '<a target="_blank" href="https://github.com/Nayggets/RTOS_STM32">RTOS</a>',
         '<span>I wanted to understand what an RTOS is and what it stand for, So i made a simple RTOS that run on stm32</span>',
+        '<a target="_blank" href="https://github.com/Nayggets/SecureFileBackupProtocol">SFBP</a>',
+        '<span>During a course on service continuity at the IUT of Montpellier-Sète, the professor assigned us the final module project to create a client-server file backup system. I enriched this task by incorporating elements of security, C optimization, and recursive folder transmission. I also implement a whole routine for installation and certificats generation</span>',
         '<br>',
         '<span> And i have a lot of other project that i don\'t want reveal</span>',
         '<br>',

@@ -56,7 +56,6 @@ var projets =
         '<span class="command"> You can type the name of the projects to see more details about-it </span>',
     ]
 
-var email=   '<a target="_blank" href="mailto:quentin.melotte@etu.umontpellier.fr">quentin.melotte@etu.umontpellier.fr</a>';
 
 
 var terminal =
@@ -72,7 +71,7 @@ var terminal =
         '<br>',
         '<span class="command">    Conclusion:</span>',
         '<span>    In conclusion, this endeavor was more than just crafting a functional shell; it was an immersive learning experience. It provided insights into the nuances of low-level programming, reinforcing the significance of precision, structure, and clarity in coding practices. This project not only enhanced my technical abilities but also underscored the importance of hands-on projects in solidifying understanding and skill development in the realm of software development.</span>',
-        '<video class="video" controls width="676" height="460"> <source id="video" src="./ressource/Shell.webm" type="video/webm"> </video>'
+        '<video class="centered" controls width="676" height="460"> <source id="video" src="./ressource/Shell.webm" type="video/webm"> </video>'
     ]
 
 var sfbp =
@@ -114,8 +113,7 @@ var chip8_emulator =
         '<br>',
         '<span class="command">Conclusion:</span>',
         '<span>     The development of my Chip-8 emulator in C++ has been an incredibly enriching experience. It has allowed me to explore the depths of C++ programming, deepen my understanding of emulation, and present an intellectually stimulating challenge. This project stands as a significant milestone in my quest to expand my knowledge and proficiency in C++ programming.</span>',
-        '<video class="video" controls width="666" height="504"> <source id="video" src="./ressource/Chip8Demonstration.webm" type="video/webm"> </video>'
-
+        '<video class="centered" controls width="666" height="504"> <source id="video" src="./ressource/Chip8Demonstration.webm" type="video/webm"> </video>'
     ]
 
 var RTOS_ON_STM32 =
@@ -183,13 +181,26 @@ var peer_to_peer =
 
 var future =
     [
-        '<span class="command">And in the future ?</span>',
-        '<span id="Topic">Future Study : ',
-        '<span>I would like to enter in an Engineering school To pursue a curriculum in embedded systems </span>',
-        '<span>To learn more about Boolean logic , Combinatory logic , Sequential Logic and modern computer architecture</span>',
+        '<h1 class="toAdd">In the future ?</h1>',
+        '<br>',
+        '<span class="command">My Future Study : </span>',
+        '<span>I would like to enter an Engineering school To pursue a curriculum in Computer science low level oriented.</span>',
+        '<span>To learn more about Boolean logic, Combinatory logic, Sequential Logic, modern computer architecture, Operating system, network development and architecture and embedded system.</span>',
         '<span>Be able to build my own product From hardware to software through the system. </span>',
         '<span>And Become Expert in embedded systems.</span>',
-
+        '<br>',
+        '<span class="command">My Future Career : </span>',
+        '<span>I would like to actively work in the field of aerospace, specifically focusing on the technical aspect of embedded systems related to space.</span>',
+        '<span>I believe that the space industry is rapidly evolving, offering opportunities to apply my current computer science knowledge within unique constraints and technologies not found elsewhere. </span>',
+        '<span>The mere thought of a day when an embedded system, carrying my code and expertise, ventures into space fills me with hope and determination.</span>',
+        '<br>',
+        '<span class="command">My future accomplishment project</span>',
+        '<span>Since I began my journey in the world of computer science, I\'ve been envisioning a project that I dream of bringing to life—it\'s my goal for the future.</span>',
+        '<span>For me, this would mark the true beginning of my adventure in computer science. Undoubtedly, this project will be the most monumental endeavor of my life.</span>',
+        '<span>I dream of designing an entire computer from scratch, starting with creating each component (using VHDL or other languages) such as the CPU, RAM, motherboard, network card, and GPU.</span>',
+        '<span>Once this is accomplished, I will delve into creating an assembler for the machine, akin to the x86 style. Subsequently, I\'ll undertake the development of a cross-compiler capable of directly compiling C code into this assembler language.</span>',
+        '<span>Here is where the real fun of the project begins: crafting a multiprocess operating system and all that it entails—virtual memory, a file system of my own design, scheduling algorithms also of my own creation, drivers enabling communication with networks using standard protocols like TCP and UDP, and a shell encompassing the majority of UNIX commands.</span>',
+        '<span>The project is nearly complete; all that remains is to create a C compiler that compiles C programs directly into executables for my own OS on my self-made machine. This project would represent the culmination of my entire career in computer science.</span>'
     ]
 
 var social =
@@ -197,6 +208,7 @@ var social =
         '<a target="_blank" href="https://github.com/Nayggets">My Github</a>',
         '<a target="_blank" href="https://www.linkedin.com/in/quentin-m%C3%A9lotte-nayggets/">My Linkedin</a>',
         '<a target="_blank" href="https://www.root-me.org/Nayggets">My Rootme</a>',
+        '<a target="_blank" href="mailto:quentin.melotte@etu.umontpellier.fr">quentin.melotte@etu.umontpellier.fr</a>',
 ]
 
 var FAQ =
@@ -389,7 +401,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Add text to the results div
     var addTextToResults = function(textToAdd){
-        document.getElementById('terminalResultsCont').innerHTML += "<p class='toAdd'>" + textToAdd + "</p>";
+        document.getElementById('terminalResultsCont').innerHTML += "<div class='toAdd'>" + textToAdd + "</div>";
 
     }
 
@@ -456,10 +468,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     addTextToResults(value);
                     number++;
                 });
-                break;
-            case "contact":
-                clearInput();
-                addTextToResults(email);
                 break;
             case "social":
                 clearInput();

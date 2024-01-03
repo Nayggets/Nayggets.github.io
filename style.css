@@ -23,8 +23,16 @@ canvas {
     left: 0;
 }
 
-.p  .video{
-    align-content: center;
+.centered{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+video{
+    margin-left:35%;
+    width:30%;
+    margin-right:35%;
 }
 
 html {

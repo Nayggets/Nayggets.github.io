@@ -5,7 +5,10 @@ h1{
 
 }
 
-
+img{
+    max-height: 20%;
+    max-width: 20%;
+}
 
 *{
     margin: 0;

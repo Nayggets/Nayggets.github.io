@@ -211,26 +211,6 @@ var social =
         '<a target="_blank" href="mailto:quentin.melotte@etu.umontpellier.fr">quentin.melotte@etu.umontpellier.fr</a>',
 ]
 
-var FAQ =
-    [
-        '<span id="Question">Why isn\'t there any photo of me on my portfolio?</span>',
-        '<span>Simply because I believe that if your judgment of me is based on my appearance rather than my skills, then you don\'t deserve to work with me.</span>',
-        '<br>',
-        '<span id="Question">Why did you create a portfolio in the form of a shell instead of a beautiful design with animations and the latest web frameworks?</span>',
-        '<span>I believe that creating a portfolio in the form of a shell represents me much more than creating a sophisticated design. I ABSOLUTELY DO NOT want to work in web development and as a big fan and enthusiast of from scratch programming, I find the shell more representative of myself.</span>',
-        '<br>',
-        '<span id="Question">What do you want to work in?</span>',
-        '<span>I would like to work in embedded systems related to space or in low-level development on the operating system side.</span>',
-        '<br>',
-        '<span id="Question">What are you doing at this moment?</span>',
-        '<span>Right now i\'m certainly programming an Operating System or making a robot with arduino stuff</span>',
-        '<br>',
-        '<span id="Question">How did i started Computer Science?</span>',
-        '<a target="_blank" href="https://www.linkedin.com/posts/quentin-m%C3%A9lotte-nayggets_caroussel-how-did-i-start-computer-science-activity-7046413602416656384-_cbo?utm_source=share&utm_medium=member_desktop">Caroussel explanation</a>'
-
-
-    ]
-
 var formations =
     [
         "<span id='Question'>BUT Computer science :</span>",
@@ -278,60 +258,41 @@ var valueAndMotivations =
         '<span>Evolve myself</span>'
     ]
 
-var personnality =
+
+var info =
     [
-        '<span class="command">My main personality traits</span>',
-        '<span>Ambitious</span>',
-        '<span>Autonomous</span>',
-        '<span>Constructive, seeking to make progress</span>',
-        '<span>Curiosity</span>',
-        '<span>Self-confidence</span>',
-        '<span>Conscientious</span>',
-        '<span>Creativity</span>',
-        '<span>Entrepreneurial spirit</span>',
-        '<span>Self-Mastery</span>',
-        '<span>Perfectionism</span>',
-        '<span>Willpower</span>'
+        '<span class="command">Navigate through my portfolio is very simple, just enter the corresponding command from the list below:</span>',
+        '<br>',
+        '<span class="command">About-me</span> Who am I ?',
+        '<br>',
+        '<span class="command">Certifications</span> The Certifications that i got through online courses.',
+        '<br>',
+        '<span class="command">Formations</span> What is my educational background ?',
+        '<br>',
+        '<span class="command">My-motivation</span> What are my motivations and value to do what i do',
+        '<br>',
+        '<span class="command">Projects</span> Want to see some of my realisations ?',
+        '<br>',
+        '<span class="command">Social</span> Take a look of my social media',
+        '<br>',
+        '<span class="command"></span>Skill</span> Listing of my skill',
+        '<br>',
+        '<span class="command">The-future</span> Future Plans',
 
     ]
-var info = [
 
-    '<span class="command">Navigate through my portfolio is very simple, just enter the corresponding command from the list below:</span>',
-    '<br>',
-    '<span class="command">About-me</span> Who am I ?',
-    '<br>',
-    '<span class="command">Projects</span> Want to see some of my realisations ?',
-    '<br>',
-    '<span class="command">Formations</span> What is my educational background ?',
-    '<br>',
-    '<span class="command">Social</span> Take a look of my social media',
-    '<br>',
-    '<span class="command">Contact</span> Want to contact me ?',
-    '<br>',
-    '<span class="command">FAQ</span> Answering a lot of question you will ask about me',
-    '<br>',
-    '<span class="command">Certifications</span> The formation that i got.',
-    '<br>',
-    '<span class="command">My-motivation</span> What are my motivations and value to do what i do',
-    '<br>',
-    '<span class="command">The-future</span> Future Plans',
-    '<br>',
-    '<span class="command">Personality</span> My personality and character traits.'
-]
+var skill =
+    [
+        ''
+    ]
 
 var certifications =
     [
-        '<a target="_blank" href="https://www.udemy.com/certificate/UC-ecc3a156-97fe-4471-a384-e1fcbf557f7d/">Complete x86 Assembly Programming | 120+ Pratical Exercises</a>',
-        '<a target="_blank" href="https://www.udemy.com/certificate/UC-c2f42c2a-bc63-426f-b54c-bc1b611409e4/">x86 Assembly Language Programming From Ground Up</a>',
-        '<a target="_blank" href="https://www.udemy.com/certificate/UC-ca08d4d2-fa68-4499-ae30-bb26d4d970dc/">Operating Systems Final Part(4) : File Systems & Threads</a>',
-        '<a target="_blank" href="https://www.udemy.com/certificate/UC-80a24a26-c191-4d01-9dd5-3093ef515ded/">Operating Systems Part3 : Syncronization and Deadlock</a>',
-        '<a target="_blank" href="https://www.udemy.com/certificate/UC-f7280ecc-2f58-416d-9bf7-c05e2b553c09/">Operating Systems from Scratch - Part 2</a>',
-        '<a target="_blank" href="https://www.udemy.com/certificate/UC-43da2f22-339e-4989-8036-be64ef0703d9/">Operating Systems from Scratch - Part 1</a>',
-        '<a target="_blank" href="https://www.coursera.org/account/accomplishments/certificate/L9AC5PC3KKEU">Build a Modern Computer from First Principles: Nand to Tetris Part II(Project-Centered Course)</a>',
-        '<a target="_blank" href="https://www.coursera.org/account/accomplishments/certificate/M47E5GEHKMHW">Build a Modern Computer from First Principles: Nand to Tetris (Project-Centered Course)</a>',
-        '<a target="_blank" href="https://www.udemy.com/certificate/UC-2c482f21-92aa-4aa0-a91f-1ec06a7d1aed/">Creating a Chip-8 Emulator in C</a>',
-        '<a target="_blank" href="https://www.udemy.com/certificate/UC-dac218f4-f83b-4a09-8330-07a68caee180/">Creating a C Compiler From Scratch Module 1</a>',
-
+        '<h1 class="toAdd">Walls of certifications</h1>',
+        '<br>',
+        '<a target="_blank" href="https://www.udemy.com/certificate/UC-ecc3a156-97fe-4471-a384-e1fcbf557f7d/"><img src="./ressource/Assembly2.png" alt="Complete x86 Assembly Programming | 120+ Pratical Exercises"></a><a target="_blank" href="https://www.udemy.com/certificate/UC-c2f42c2a-bc63-426f-b54c-bc1b611409e4/"><img src="./ressource/Assembly1.png" alt="x86 Assembly Language Programming From Ground Up"></a><a target="_blank" href="https://www.udemy.com/certificate/UC-ca08d4d2-fa68-4499-ae30-bb26d4d970dc/"><img src="./ressource/OpSystem4.png" alt="Operating Systems Final Part(4) : File Systems & Threads"></a><a target="_blank" href="https://www.udemy.com/certificate/UC-80a24a26-c191-4d01-9dd5-3093ef515ded/"><img src="./ressource/OpSystem3.png" alt="Operating Systems Part3 : Syncronization and Deadlock"></a><a target="_blank" href="https://www.udemy.com/certificate/UC-f7280ecc-2f58-416d-9bf7-c05e2b553c09/"><img src="./ressource/OpSystem2.png" alt="Operating Systems from Scratch - Part 2"></a>',
+        '<a target="_blank" href="https://www.udemy.com/certificate/UC-43da2f22-339e-4989-8036-be64ef0703d9/"><img src="./ressource/OpSystem1.png" alt="Operating Systems from Scratch - Part 1"></a><a target="_blank" href="https://www.coursera.org/account/accomplishments/certificate/L9AC5PC3KKEU"><img src="./ressource/nand2tetris2.png" alt="Build a Modern Computer from First Principles: Nand to Tetris Part II(Project-Centered Course)"></a><a target="_blank" href="https://www.coursera.org/account/accomplishments/certificate/M47E5GEHKMHW"><img src="./ressource/nand2tetris1.png" alt="Build a Modern Computer from First Principles: Nand to Tetris (Project-Centered Course)"></a><a target="_blank" href="https://www.udemy.com/certificate/UC-2c482f21-92aa-4aa0-a91f-1ec06a7d1aed/"><img src="./ressource/Create8ChipEmulator.jpg" alt="Creating a Chip-8 Emulator in C"></a><a target="_blank" href="https://www.udemy.com/certificate/UC-dac218f4-f83b-4a09-8330-07a68caee180/"><img src="./ressource/Compiler_c.png" alt="Creating a C Compiler From Scratch Module 1"></a>',
+        '<a target="_blank" href="https://www.udemy.com/certificate/UC-14916329-3e02-4811-83c3-ab57fc1056cb/"><img src="./ressource/RTOSFromGroundUpOnArm.jpg" alt="Build Your Own RealTime OS (RTOS) From Ground Uptm on ARM"></a><a target="_blank" href="https://www.udemy.com/certificate/UC-a4fa3926-2d92-4714-a999-e0e2663245ef/"><img src="./ressource/LinuxBootcamp.jpg" alt="The Linux Command Line Bootcamp: Beginner To Power User"</a><a target="_blank" href="https://www.udemy.com/certificate/UC-f75bb1c2-5ecb-4f58-a0c5-d2c35991eb05/"><img src="./ressource/FormationCICD.jpg" alt="Formation DevOps, CI/CD de A à Z"></a><a target="_blank" href="https://www.udemy.com/certificate/UC-3444d346-2092-4cda-bada-289b286ec551/"><img src="./ressource/GithubBootcamp.jpg" alt="The Git & Github Bootcamp"></a>',
 
     ]
 
@@ -462,13 +423,6 @@ document.addEventListener('DOMContentLoaded', function() {
             case "about-me":
                 about_me();
                 break;
-            case "faq":
-                clearInput();
-                FAQ.forEach(value => {
-                    addTextToResults(value);
-                    number++;
-                });
-                break;
             case "social":
                 clearInput();
                 social.forEach(value => {
@@ -501,14 +455,6 @@ document.addEventListener('DOMContentLoaded', function() {
             case "certifications":
                 clearInput();
                 certifications.forEach(value => {
-                    addTextToResults(value);
-                    number++;
-                })
-                break;
-            case "personality":
-
-                clearInput();
-                personnality.forEach(value => {
                     addTextToResults(value);
                     number++;
                 })

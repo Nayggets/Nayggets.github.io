@@ -181,7 +181,7 @@ var peer_to_peer =
 
 var future =
     [
-        '<h1 class="toAdd">In the future ?</h1>',
+        '<h1 class="toAdd">In the Future ?</h1>',
         '<br>',
         '<span class="command">My Future Study : </span>',
         '<span>I would like to enter an Engineering school To pursue a curriculum in Computer science low level oriented.</span>',
@@ -194,7 +194,7 @@ var future =
         '<span>I believe that the space industry is rapidly evolving, offering opportunities to apply my current computer science knowledge within unique constraints and technologies not found elsewhere. </span>',
         '<span>The mere thought of a day when an embedded system, carrying my code and expertise, ventures into space fills me with hope and determination.</span>',
         '<br>',
-        '<span class="command">My future accomplishment project</span>',
+        '<span class="command">My Future accomplishment project</span>',
         '<span>Since I began my journey in the world of computer science, I\'ve been envisioning a project that I dream of bringing to life—it\'s my goal for the future.</span>',
         '<span>For me, this would mark the true beginning of my adventure in computer science. Undoubtedly, this project will be the most monumental endeavor of my life.</span>',
         '<span>I dream of designing an entire computer from scratch, starting with creating each component (using VHDL or other languages) such as the CPU, RAM, motherboard, network card, and GPU.</span>',
@@ -220,7 +220,7 @@ var formations =
         "<span>Level : 6</span>",
         "<span>University : Iut of Montpellier</span>",
         "<span>Initial Formation</span>",
-        "<span id='Question'>3 Notion that i learned in:</span>",
+        "<span id='Question'>3 Notion that I learned in:</span>",
         "<span id='Topic'>discrete mathematics : </span>",
         "<span>During my Bachelor of Technology (BUT) program, I had the opportunity to study discrete mathematics. This course allowed me to gain a deeper understanding of mathematical structures and their applications in computer science. I learned about topics such as graph theory, combinatorics, and number theory, and how they relate to various areas of computer science, such as algorithms, cryptography, and computer networks. This knowledge has proven to be invaluable in my career as a computer science professional, as I am able to apply these concepts to solve complex problems and develop innovative solutions. Overall, studying discrete mathematics has been a challenging and rewarding experience, and I am grateful for the opportunity to have learned about this fascinating field of study.</span>",
         '<br>',
@@ -275,15 +275,26 @@ var info =
         '<br>',
         '<span class="command">Social</span> Take a look of my social media',
         '<br>',
-        '<span class="command"></span>Skill</span> Listing of my skill',
+        /*
+        '<span class="command">Skill</span> Listing of my skill',
         '<br>',
-        '<span class="command">The-future</span> Future Plans',
+        */
+        '<span class="command">The-Future</span> Future Plans',
+
+        '<a></a>'
 
     ]
 
 var skill =
     [
-        ''
+        '<span>C++</span>',
+        '<span>C</span>',
+        '<span>Linux</span>',
+        '<span></span>',
+        '<span></span>',
+        '<span></span>',
+        '<span></span>',
+        '<span></span>',
     ]
 
 var certifications =

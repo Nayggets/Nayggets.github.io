@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Restricted acces for professor of the IUT of Montpellier"
+AuthUserFile .htpasswd
+require valid-user

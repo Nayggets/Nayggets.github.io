@@ -4,5 +4,7 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="jquery-1.12.0" level="application" />
+    <orderEntry type="library" name="sha1" level="application" />
   </component>
 </module>

@@ -275,13 +275,11 @@ var info =
         '<br>',
         '<span class="command">Social</span> Take a look of my social media',
         '<br>',
-        /*
         '<span class="command">Skill</span> Listing of my skill',
         '<br>',
-        */
         '<span class="command">The-Future</span> Future Plans',
-
-        '<a></a>'
+        '<br>',
+        '<a href="./Restricted_access/index.html">Assessment Portfolio</a> This is restricted to the professor of the IUT of Montpellier-Sète.'
 
     ]
 
@@ -290,11 +288,24 @@ var skill =
         '<span>C++</span>',
         '<span>C</span>',
         '<span>Linux</span>',
+         '<span>Stm32</span>',
+        '<span>Arduino</span>',
+        '<span>x86 assembly</span>',
+        '<span>Git</span>',
+        '<span>Docker</span>',
+        '<span>Operating System</span>',
+        '<span>Embedded System</span>',
+        '<span>System Management</span>',
+        '<span>Network management</span>',
+        '<span>Network Development</span>',
+        '<span>Unity</span>',
+        '<span>Hdl</span>',
         '<span></span>',
         '<span></span>',
         '<span></span>',
         '<span></span>',
-        '<span></span>',
+
+
     ]
 
 var certifications =
@@ -304,7 +315,6 @@ var certifications =
         '<a target="_blank" href="https://www.udemy.com/certificate/UC-ecc3a156-97fe-4471-a384-e1fcbf557f7d/"><img src="./ressource/Assembly2.png" alt="Complete x86 Assembly Programming | 120+ Pratical Exercises"></a><a target="_blank" href="https://www.udemy.com/certificate/UC-c2f42c2a-bc63-426f-b54c-bc1b611409e4/"><img src="./ressource/Assembly1.png" alt="x86 Assembly Language Programming From Ground Up"></a><a target="_blank" href="https://www.udemy.com/certificate/UC-ca08d4d2-fa68-4499-ae30-bb26d4d970dc/"><img src="./ressource/OpSystem4.png" alt="Operating Systems Final Part(4) : File Systems & Threads"></a><a target="_blank" href="https://www.udemy.com/certificate/UC-80a24a26-c191-4d01-9dd5-3093ef515ded/"><img src="./ressource/OpSystem3.png" alt="Operating Systems Part3 : Syncronization and Deadlock"></a><a target="_blank" href="https://www.udemy.com/certificate/UC-f7280ecc-2f58-416d-9bf7-c05e2b553c09/"><img src="./ressource/OpSystem2.png" alt="Operating Systems from Scratch - Part 2"></a>',
         '<a target="_blank" href="https://www.udemy.com/certificate/UC-43da2f22-339e-4989-8036-be64ef0703d9/"><img src="./ressource/OpSystem1.png" alt="Operating Systems from Scratch - Part 1"></a><a target="_blank" href="https://www.coursera.org/account/accomplishments/certificate/L9AC5PC3KKEU"><img src="./ressource/nand2tetris2.png" alt="Build a Modern Computer from First Principles: Nand to Tetris Part II(Project-Centered Course)"></a><a target="_blank" href="https://www.coursera.org/account/accomplishments/certificate/M47E5GEHKMHW"><img src="./ressource/nand2tetris1.png" alt="Build a Modern Computer from First Principles: Nand to Tetris (Project-Centered Course)"></a><a target="_blank" href="https://www.udemy.com/certificate/UC-2c482f21-92aa-4aa0-a91f-1ec06a7d1aed/"><img src="./ressource/Create8ChipEmulator.jpg" alt="Creating a Chip-8 Emulator in C"></a><a target="_blank" href="https://www.udemy.com/certificate/UC-dac218f4-f83b-4a09-8330-07a68caee180/"><img src="./ressource/Compiler_c.png" alt="Creating a C Compiler From Scratch Module 1"></a>',
         '<a target="_blank" href="https://www.udemy.com/certificate/UC-14916329-3e02-4811-83c3-ab57fc1056cb/"><img src="./ressource/RTOSFromGroundUpOnArm.jpg" alt="Build Your Own RealTime OS (RTOS) From Ground Uptm on ARM"></a><a target="_blank" href="https://www.udemy.com/certificate/UC-a4fa3926-2d92-4714-a999-e0e2663245ef/"><img src="./ressource/LinuxBootcamp.jpg" alt="The Linux Command Line Bootcamp: Beginner To Power User"</a><a target="_blank" href="https://www.udemy.com/certificate/UC-f75bb1c2-5ecb-4f58-a0c5-d2c35991eb05/"><img src="./ressource/FormationCICD.jpg" alt="Formation DevOps, CI/CD de A à Z"></a><a target="_blank" href="https://www.udemy.com/certificate/UC-3444d346-2092-4cda-bada-289b286ec551/"><img src="./ressource/GithubBootcamp.jpg" alt="The Git & Github Bootcamp"></a>',
-
     ]
 
 function createLine(text) {
@@ -519,6 +529,12 @@ document.addEventListener('DOMContentLoaded', function() {
             case "shell":
                 clearInput();
                 terminal.forEach(value =>{
+                    addTextToResults(value);
+                })
+                break;
+            case "skill":
+                clearInput();
+                skill.forEach(value =>{
                     addTextToResults(value);
                 })
                 break;

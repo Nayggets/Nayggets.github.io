@@ -1,5 +1,12 @@
 
 
+var curriculum =
+    [
+        '<h1 class="toAdd">My Resume<h1>',
+        '<br>',
+        '<div class="cv"><img src=\"./ressource/cv.jpg\" alt=\"my resume\"></div>',
+    ]
+
 var aboutme = [
     '<span>Quentin Mélotte. As a computer science student, I\'m deeply passionate about embedded systems and extensively involved in network development. I\'ve established a foundational understanding of cybersecurity through platforms like Hack The Box or Root Me. Additionally, I have a grounding in video game development from participating in multiple game jams. </span>',
     '<br>',
@@ -38,18 +45,19 @@ var start =
 var projets =
     [
         '<span class="command"> Project that i done on my Free Time. </span>',
-        '<a target="_blank" href="https://github.com/Nayggets/peer_to_peer_chat">peer_to_peer_chat</a>',
-        '<span> this is a peer to peer application use to chat with your friend</span>',
+        '<br>',
         '<a target="_blank" href="https://github.com/Nayggets/Chip8_Emulator"> Chip8_Emulator </a>',
         '<span>I wanted to do an emulator of an old computer so i made this Chip8Emulator in C</span>',
-        '<a target="_blank" href="https://github.com/Nayggets/Shell">Shell </a>',
-        '<span>I made a simple shell to understand duplication of process and a lot of other complexe</span>',
         '<a target="_blank" href="https://github.com/Nayggets/C_Compiler">C_Compiler</a>',
         '<span>This is a C compiler not finished it can parse and lex C code</span>',
+        '<a target="_blank" href="https://github.com/Nayggets/peer_to_peer_chat">peer_to_peer_chat</a>',
+        '<span> this is a peer to peer application use to chat with your friend</span>',
         '<a target="_blank" href="https://github.com/Nayggets/RTOS_STM32">RTOS</a>',
         '<span>I wanted to understand what an RTOS is and what it stand for, So i made a simple RTOS that run on stm32</span>',
         '<a target="_blank" href="https://github.com/Nayggets/SecureFileBackupProtocol">SFBP</a>',
         '<span>During a course on service continuity at the IUT of Montpellier-Sète, the professor assigned us the final module project to create a client-server file backup system. I enriched this task by incorporating elements of security, C optimization, and recursive folder transmission. I also implement a whole routine for installation and certificats generation</span>',
+        '<a target="_blank" href="https://github.com/Nayggets/Shell">Shell</a>',
+        '<span>I made a simple shell to understand duplication of process and a lot of other complexe</span>',
         '<br>',
         '<span> And i have a lot of other project that i don\'t want reveal</span>',
         '<br>',
@@ -200,7 +208,7 @@ var future =
         '<span>I dream of designing an entire computer from scratch, starting with creating each component (using VHDL or other languages) such as the CPU, RAM, motherboard, network card, and GPU.</span>',
         '<span>Once this is accomplished, I will delve into creating an assembler for the machine, akin to the x86 style. Subsequently, I\'ll undertake the development of a cross-compiler capable of directly compiling C code into this assembler language.</span>',
         '<span>Here is where the real fun of the project begins: crafting a multiprocess operating system and all that it entails—virtual memory, a file system of my own design, scheduling algorithms also of my own creation, drivers enabling communication with networks using standard protocols like TCP and UDP, and a shell encompassing the majority of UNIX commands.</span>',
-        '<span>The project is nearly complete; all that remains is to create a C compiler that compiles C programs directly into executables for my own OS on my self-made machine. This project would represent the culmination of my entire career in computer science.</span>'
+        '<span>All that remains is to create a C compiler that compiles C programs directly into executables for my own OS on my self-made machine. This project would represent the culmination of my entire career in computer science.</span>'
     ]
 
 var social =
@@ -273,6 +281,8 @@ var info =
         '<br>',
         '<span class="command">Projects</span> Want to see some of my realisations ?',
         '<br>',
+        '<span class="command">Resume</span> Here is my resume as an apprentice designer-developer in Research and Development(R&D).',
+        '<br>',
         '<span class="command">Social</span> Take a look of my social media',
         '<br>',
         '<span class="command">Skill</span> Listing of my skill',
@@ -288,7 +298,7 @@ var skill =
         '<span>C++</span>',
         '<span>C</span>',
         '<span>Linux</span>',
-         '<span>Stm32</span>',
+        '<span>Stm32</span>',
         '<span>Arduino</span>',
         '<span>x86 assembly</span>',
         '<span>Git</span>',
@@ -315,6 +325,7 @@ var certifications =
         '<a target="_blank" href="https://www.udemy.com/certificate/UC-ecc3a156-97fe-4471-a384-e1fcbf557f7d/"><img src="./ressource/Assembly2.png" alt="Complete x86 Assembly Programming | 120+ Pratical Exercises"></a><a target="_blank" href="https://www.udemy.com/certificate/UC-c2f42c2a-bc63-426f-b54c-bc1b611409e4/"><img src="./ressource/Assembly1.png" alt="x86 Assembly Language Programming From Ground Up"></a><a target="_blank" href="https://www.udemy.com/certificate/UC-ca08d4d2-fa68-4499-ae30-bb26d4d970dc/"><img src="./ressource/OpSystem4.png" alt="Operating Systems Final Part(4) : File Systems & Threads"></a><a target="_blank" href="https://www.udemy.com/certificate/UC-80a24a26-c191-4d01-9dd5-3093ef515ded/"><img src="./ressource/OpSystem3.png" alt="Operating Systems Part3 : Syncronization and Deadlock"></a><a target="_blank" href="https://www.udemy.com/certificate/UC-f7280ecc-2f58-416d-9bf7-c05e2b553c09/"><img src="./ressource/OpSystem2.png" alt="Operating Systems from Scratch - Part 2"></a>',
         '<a target="_blank" href="https://www.udemy.com/certificate/UC-43da2f22-339e-4989-8036-be64ef0703d9/"><img src="./ressource/OpSystem1.png" alt="Operating Systems from Scratch - Part 1"></a><a target="_blank" href="https://www.coursera.org/account/accomplishments/certificate/L9AC5PC3KKEU"><img src="./ressource/nand2tetris2.png" alt="Build a Modern Computer from First Principles: Nand to Tetris Part II(Project-Centered Course)"></a><a target="_blank" href="https://www.coursera.org/account/accomplishments/certificate/M47E5GEHKMHW"><img src="./ressource/nand2tetris1.png" alt="Build a Modern Computer from First Principles: Nand to Tetris (Project-Centered Course)"></a><a target="_blank" href="https://www.udemy.com/certificate/UC-2c482f21-92aa-4aa0-a91f-1ec06a7d1aed/"><img src="./ressource/Create8ChipEmulator.jpg" alt="Creating a Chip-8 Emulator in C"></a><a target="_blank" href="https://www.udemy.com/certificate/UC-dac218f4-f83b-4a09-8330-07a68caee180/"><img src="./ressource/Compiler_c.png" alt="Creating a C Compiler From Scratch Module 1"></a>',
         '<a target="_blank" href="https://www.udemy.com/certificate/UC-14916329-3e02-4811-83c3-ab57fc1056cb/"><img src="./ressource/RTOSFromGroundUpOnArm.jpg" alt="Build Your Own RealTime OS (RTOS) From Ground Uptm on ARM"></a><a target="_blank" href="https://www.udemy.com/certificate/UC-a4fa3926-2d92-4714-a999-e0e2663245ef/"><img src="./ressource/LinuxBootcamp.jpg" alt="The Linux Command Line Bootcamp: Beginner To Power User"</a><a target="_blank" href="https://www.udemy.com/certificate/UC-f75bb1c2-5ecb-4f58-a0c5-d2c35991eb05/"><img src="./ressource/FormationCICD.jpg" alt="Formation DevOps, CI/CD de A à Z"></a><a target="_blank" href="https://www.udemy.com/certificate/UC-3444d346-2092-4cda-bada-289b286ec551/"><img src="./ressource/GithubBootcamp.jpg" alt="The Git & Github Bootcamp"></a>',
+        '<br>',
     ]
 
 function createLine(text) {
@@ -417,9 +428,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var postHelpList = function(){
         // Array of all the help keywords
         info.forEach(value => {
-            console.log(value);
             addTextToResults(value);
-            number++;
         })
     }
 
@@ -441,6 +450,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
         switch(textInputValueLowerCase){
             // replies
+            case "resume":
+                clearInput();
+                curriculum.forEach(value =>{
+                    addTextToResults(value);
+                })
+                break;
             case "about-me":
                 about_me();
                 break;
@@ -477,14 +492,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 clearInput();
                 certifications.forEach(value => {
                     addTextToResults(value);
-                    number++;
                 })
                 break;
             case "my-motivation":
                 clearInput();
                 valueAndMotivations.forEach(value => {
                     addTextToResults(value);
-                    number++;
                 })
                 break;
             case "sfbp":
@@ -499,7 +512,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 clearInput();
                 projets.forEach(value =>{
                     addTextToResults(value);
-                    number++;
                 })
                 break;
             case "c_compiler":

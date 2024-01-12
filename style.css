@@ -37,6 +37,7 @@ canvas {
     position: absolute;
     top: 0;
     left: 0;
+    position: fixed;
 }
 
 .centered{
@@ -113,6 +114,8 @@ body{
 
 
 .terminalCont{
+    position: relative;
+    z-index: 9999999;
     background: transparent;
     width: 100%;
     height: 100%;
@@ -163,7 +166,7 @@ body{
 
 
 #terminalTextInput{
-    
+
     background: transparent;
     display: block;
     border: none;

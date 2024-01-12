@@ -8,7 +8,19 @@ gradient.addColorStop(0,'green');
 gradient.addColorStop(0.33,'yellow');
 gradient.addColorStop(0.66,'blue');
 gradient.addColorStop(1,'purple');
+window.addEventListener('resize',function(){
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    effect.resize(canvas.width,canvas.height);
+});
 
+
+
+window.addEventListener('load',function(){
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    effect.resize(canvas.width,canvas.height);
+});
 
 
 
@@ -85,14 +97,3 @@ function animate(timeStamp){
 
 animate(0);
 
-window.addEventListener('resize',function(){
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-    effect.resize(canvas.width,canvas.height);
-});
-
-window.addEventListener('load',function(){
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-    effect.resize(canvas.width,canvas.height);
-});

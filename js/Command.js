@@ -98,8 +98,8 @@ var sfbp =
         '<span>Security and Efficiency Focus: Emphasizing security through TLS 1.3 and AES 256-bit encryption while optimizing file-related actions underscored a balanced focus on security and performance.</span>',
         '<br>',
         '<span class="command">Conclusion</span>',
-        '<span>The development of the SFBP protocol and its implementation within a software application has been an enriching endeavor. It significantly contributed to my understanding of C optimization techniques, UNIX/Linux system standards, and security protocols pertaining to file backups and secure communications. Leveraging TLS 1.3 and AES encryption in a client-server architecture underscored the importance of robust security measures in modern data transmission protocols. This project stands as a testament to a comprehensive exploration of system-level actions, networking, and security within the realm of software development.</span>'
-
+        '<span>The development of the SFBP protocol and its implementation within a software application has been an enriching endeavor. It significantly contributed to my understanding of C optimization techniques, UNIX/Linux system standards, and security protocols pertaining to file backups and secure communications. Leveraging TLS 1.3 and AES encryption in a client-server architecture underscored the importance of robust security measures in modern data transmission protocols. This project stands as a testament to a comprehensive exploration of system-level actions, networking, and security within the realm of software development.</span>',
+        '<video class="centered" controls width="730" height="516"> <source id="video" src="./ressource/SFBP.webm"> </video>'
     ]
 
 
@@ -217,7 +217,27 @@ var social =
         '<a target="_blank" href="https://www.linkedin.com/in/quentin-m%C3%A9lotte-nayggets/">My Linkedin</a>',
         '<a target="_blank" href="https://www.root-me.org/Nayggets">My Rootme</a>',
         '<a target="_blank" href="mailto:quentin.melotte@etu.umontpellier.fr">quentin.melotte@etu.umontpellier.fr</a>',
-]
+    ]
+
+var hobies =
+    [
+        '<span class="command">Here is the list of commands to display my hobbies</span>',
+        '<br>',        
+        '<span class="comamnd">Cars</span>One of my passion is sport cars',
+        '<br>',
+        '<span class="command">Sport</span>I like doing sport on my free time to destress',
+        '<br>',
+        '<span class="command">Tabletop role-playing game(TRPG)</span>I play Tabletop role-play game like Dungeon and dragon where i am the game master',
+        '<br>',
+        '<span class="command">Cooking</span>I love to cook and eat my creation',
+        '<br>',
+        '<span class="command">Music</span>I listen to a lot of music when i work',
+        '<br>',
+        '<span class="command">Computer_science</span>I love computer science ',
+        '<br>',
+        '<span class="command">Video_Game</span>I play video since I am three years-old',
+        '<br>',
+    ]
 
 var formations =
     [
@@ -300,7 +320,7 @@ var skill =
         '<span>Linux</span>',
         '<span>Stm32</span>',
         '<span>Arduino</span>',
-        '<span>x86 assembly</span>',
+        '<span>x86 Assembly</span>',
         '<span>Git</span>',
         '<span>Docker</span>',
         '<span>Operating System</span>',
@@ -310,12 +330,21 @@ var skill =
         '<span>Network Development</span>',
         '<span>Unity</span>',
         '<span>Hdl</span>',
-        '<span></span>',
-        '<span></span>',
-        '<span></span>',
-        '<span></span>',
+        '<span>Compilation</span>',
+        '<span>Java</span>',
+        '<span>Bash</span>',
+        '<span>QT</span>',
 
 
+    ]
+
+var event = 
+    [
+        '<span class="command">ActInSpace</span>',
+        '<span class="command">24H des IUTS</span>',
+        '<span class="command">Code game jam</span>',
+        '<span class="command">Global game jam</span>',
+        '<span class="command">Nuit de l\'informatique'
     ]
 
 var certifications =
@@ -463,7 +492,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 clearInput();
                 social.forEach(value => {
                     addTextToResults(value);
-                    number++;
 
                 })
                 break;
@@ -471,7 +499,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 clearInput();
                 future.forEach(value => {
                     addTextToResults(value);
-                    number++;
                 })
                 break;
             case "formations":
@@ -479,7 +506,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 clearInput();
                 formations.forEach(value => {
                     addTextToResults(value);
-                    number++;
                 })
                 break;
             }

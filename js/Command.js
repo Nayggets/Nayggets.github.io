@@ -8,7 +8,7 @@ var curriculum =
     ]
 
 var aboutme = [
-    '<span>Quentin Mélotte. As a computer science student, I\'m deeply passionate about embedded systems and extensively involved in network development. I\'ve established a foundational understanding of cybersecurity through platforms like Hack The Box or Root Me. Additionally, I have a grounding in video game development from participating in multiple game jams. </span>',
+    '<span>Hi I am Quentin Mélotte. and i\' am a computer science student, I\'m deeply passionate about embedded systems and extensively involved in network development. I\'ve established a foundational understanding of cybersecurity through platforms like Hack The Box or Root Me. Additionally, I have a grounding in video game development from participating in multiple game jams. </span>',
     '<br>',
     '<span>My primary aim is to unravel the origins of computing, grasping its construction and core functionalities. I\'m driven to create innovative projects and products, aspiring ultimately to launch an object of my own design into space.</span>',
     '<br>',
@@ -46,22 +46,22 @@ var projets =
     [
         '<span class="command"> Project that i done on my Free Time. </span>',
         '<br>',
+        '<span id="Topic"> You can type the name of the projects to see more details about-it and click on it to see the github page of the project</span>',
+        '<br>',
         '<a target="_blank" href="https://github.com/Nayggets/Chip8_Emulator"> Chip8_Emulator </a>',
-        '<span>I wanted to do an emulator of an old computer so i made this Chip8Emulator in C</span>',
+        '<span>I wanted to understand how to replicate the behavior of different computer systems, so I undertook this project to learn the basics.</span>',
         '<a target="_blank" href="https://github.com/Nayggets/C_Compiler">C_Compiler</a>',
-        '<span>This is a C compiler not finished it can parse and lex C code</span>',
+        '<span>This project involved the development of software capable of translating a programming language so that it could be understood and executed by a computer.</span>',
         '<a target="_blank" href="https://github.com/Nayggets/peer_to_peer_chat">peer_to_peer_chat</a>',
-        '<span> this is a peer to peer application use to chat with your friend</span>',
+        '<span> This is an application that allows you to chat with your friends directly, without relying on a central server.</span>',
         '<a target="_blank" href="https://github.com/Nayggets/RTOS_STM32">RTOS</a>',
         '<span>I wanted to understand what an RTOS is and what it stand for, So i made a simple RTOS that run on stm32</span>',
         '<a target="_blank" href="https://github.com/Nayggets/SecureFileBackupProtocol">SFBP</a>',
-        '<span>During a course on service continuity at the IUT of Montpellier-Sète, the professor assigned us the final module project to create a client-server file backup system. I enriched this task by incorporating elements of security, C optimization, and recursive folder transmission. I also implement a whole routine for installation and certificats generation</span>',
+        '<span>During a course on service continuity at the IUT of Montpellier-Sète, the professor assigned us the final module project to create a remote file backup application</span>',
         '<a target="_blank" href="https://github.com/Nayggets/Shell">Shell</a>',
-        '<span>I made a simple shell to understand duplication of process and a lot of other complexe</span>',
+        '<span>I created a program capable of executing commands provided by a user according to Linux operating system.</span>',
         '<br>',
         '<span> And i have a lot of other project that i don\'t want reveal</span>',
-        '<br>',
-        '<span class="command"> You can type the name of the projects to see more details about-it </span>',
     ]
 
 
@@ -219,23 +219,25 @@ var social =
         '<a target="_blank" href="mailto:quentin.melotte@etu.umontpellier.fr">quentin.melotte@etu.umontpellier.fr</a>',
     ]
 
-var hobies =
+var hobbies =
     [
-        '<span class="command">Here is the list of commands to display my hobbies</span>',
-        '<br>',        
-        '<span class="comamnd">Cars</span>One of my passion is sport cars',
+        '<span class="command"> Hobbies and Passion. </span>',
         '<br>',
-        '<span class="command">Sport</span>I like doing sport on my free time to destress',
+        '<span id="Topic"> You can type the name of the hobbies to see more details about-it</span>',
+        '<br>',     
+        '<span class="command">Cars</span> One of my passion is sport cars',
         '<br>',
-        '<span class="command">Tabletop role-playing game(TRPG)</span>I play Tabletop role-play game like Dungeon and dragon where i am the game master',
+        '<span class="command">Sport</span> I like doing sport on my free time to destress',
         '<br>',
-        '<span class="command">Cooking</span>I love to cook and eat my creation',
+        '<span class="command">Tabletop role-playing game(TRPG)</span> I play Tabletop role-play game like Dungeon and dragon where i am the game master',
         '<br>',
-        '<span class="command">Music</span>I listen to a lot of music when i work',
+        '<span class="command">Cooking</span> I love to cook and eat my creation',
         '<br>',
-        '<span class="command">Computer_science</span>I love computer science ',
+        '<span class="command">Music</span> I listen to a lot of music when i work',
         '<br>',
-        '<span class="command">Video_Game</span>I play video since I am three years-old',
+        '<span class="command">Computer_science</span> I love computer science ',
+        '<br>',
+        '<span class="command">Video_Game</span> I play video since I am three years-old',
         '<br>',
     ]
 
@@ -297,6 +299,8 @@ var info =
         '<br>',
         '<span class="command">Formations</span> What is my educational background ?',
         '<br>',
+        '<span class="command">Hobbies</span> My hobbies and passion ' ,
+        '<br>',
         '<span class="command">My-motivation</span> What are my motivations and value to do what i do',
         '<br>',
         '<span class="command">Projects</span> Want to see some of my realisations ?',
@@ -315,25 +319,55 @@ var info =
 
 var skill =
     [
+        '<span class="command">Programming Language</span>',
         '<span>C++</span>',
         '<span>C</span>',
+        '<span>C#</span>',
+        '<span>Java</span>',
+        '<span>Bash</span>',
+        '<span>x86 Assembly</span>',
+        '<span class="command">Operating System</span>',
+        '<span>Unix</span>',
+        '<span>BSD</span>',
+        '<span>Windows</span>',
         '<span>Linux</span>',
+        '<span class="command">The microprocessors on which I have already developed.</span>',
         '<span>Stm32</span>',
         '<span>Arduino</span>',
-        '<span>x86 Assembly</span>',
-        '<span>Git</span>',
-        '<span>Docker</span>',
+        '<span>Raspberry pi</span>',
+        '<span class="command">Mechanism or software of which I know the internal workings.</span>',
         '<span>Operating System</span>',
+        '<span>Real Time Operating System</span>',
+        '<span>Compilation</span>',
+        '<span>HTTP/HTTPS</span>',
+        '<span>TCP/IP</span>',
+        '<span>UDP/IP</span>',
+        '<span>RTSP/RTSPS</span>',
+        '<span>RTP/SRTP</span>',
+        '<span>SSL/TLS</span>', 
+        '<span>AES</span>',
+        '<span>RSA and El gamal</span>',
         '<span>Embedded System</span>',
+        '<span class="command">Development environment tools.</span>',
+        '<span>Git</span>',
+        '<span>GitHub</span>',
+        '<span>GitHub Action</span>',
+        '<span>Docker</span>',
+        '<span>GDB</span>',
+        '<span>Valgrind</span>',
+        '<span>Makefile</span>',
+        '<span>Mingw/Clang</span>',
+        '<span class="command">Framework or Library</span>',
+        '<span>Unity</span>',
+        '<span>QT</span>',
+        '<span>JavaFx</span>',
+        '<span>SDL</span>',
+        '<span>SFML</span>',
+        '<span>OpenSSL/libssldev</span>',
         '<span>System Management</span>',
         '<span>Network management</span>',
         '<span>Network Development</span>',
-        '<span>Unity</span>',
         '<span>Hdl</span>',
-        '<span>Compilation</span>',
-        '<span>Java</span>',
-        '<span>Bash</span>',
-        '<span>QT</span>',
 
 
     ]
@@ -482,6 +516,12 @@ document.addEventListener('DOMContentLoaded', function() {
             case "resume":
                 clearInput();
                 curriculum.forEach(value =>{
+                    addTextToResults(value);
+                })
+                break;
+            case "hobbies":
+                clearInput();
+                hobbies.forEach(value =>{
                     addTextToResults(value);
                 })
                 break;

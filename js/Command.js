@@ -364,9 +364,9 @@ var skill =
         '<span>SDL</span>',
         '<span>SFML</span>',
         '<span>OpenSSL/libssldev</span>',
+        '<span class="command">Other Skill</span>',
         '<span>System Management</span>',
         '<span>Network management</span>',
-        '<span>Network Development</span>',
         '<span>Hdl</span>',
 
 

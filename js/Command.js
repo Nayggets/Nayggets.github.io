@@ -222,8 +222,6 @@ var social =
 var hobbies =
     [
         '<span class="command"> Hobbies and Passion. </span>',
-        '<br>',
-        '<span id="Topic"> You can type the name of the hobbies to see more details about-it</span>',
         '<br>',     
         '<span class="command">Cars</span> One of my passion is sport cars',
         '<br>',
@@ -238,7 +236,6 @@ var hobbies =
         '<span class="command">Computer_science</span> I love computer science ',
         '<br>',
         '<span class="command">Video_Game</span> I play video since I am three years-old',
-        '<br>',
     ]
 
 var formations =
@@ -357,6 +354,8 @@ var skill =
         '<span>Valgrind</span>',
         '<span>Makefile</span>',
         '<span>Mingw/Clang</span>',
+        '<span>Visual Studio</span>',
+        '<span>Visual Studio code</span>',
         '<span class="command">Framework or Library</span>',
         '<span>Unity</span>',
         '<span>QT</span>',
@@ -364,21 +363,50 @@ var skill =
         '<span>SDL</span>',
         '<span>SFML</span>',
         '<span>OpenSSL/libssldev</span>',
-        '<span class="command">Other Skill</span>',
+        '<span class="command">Other Skill or Tools</span>',
         '<span>System Management</span>',
         '<span>Network management</span>',
         '<span>Hdl</span>',
+        '<span>Chatgpt 3.5</span>'
 
 
     ]
 
-var event = 
+var events = 
     [
+        '<span class="command">The main competitions/events that have marked my student career :</span>',
+        '<br>',
         '<span class="command">ActInSpace</span>',
-        '<span class="command">24H des IUTS</span>',
+        '<br>',
+        '<span class="command">24H des IUTS informatique(24HIUT)</span>'
+/*
         '<span class="command">Code game jam</span>',
         '<span class="command">Global game jam</span>',
         '<span class="command">Nuit de l\'informatique'
+*/    
+    ]
+
+var ActInSpace =
+    [
+        '<h1 class="toAdd">ActInSpace</span>',
+        '<span class="command">What is ActInSpace</span>',
+        '<span>ActInSpace is an international innovation contest organized by the French Space Agency (CNES) and the European Space Agency (ESA), in collaboration with various partners. The contest is designed to encourage entrepreneurship and the development of innovative solutions based on space technologies.</span>',
+        '<span>ActInSpace brings together students, entrepreneurs, developers, and creative minds from around the world to work on challenges related to space applications. Participants form teams and have a limited amount of time to brainstorm, develop, and present their ideas to a panel of judges.</span>',
+        '<span class="command">My adventure</span>',
+        '<span>I participated in the 2022 edition of ActInSpace in Montpellier and the national competition in France. It all started in Montpellier with a team of five friends, including myself. We chose one of the challenges from the list and developed a startup idea called "gnssafe." After a night of brainstorming, the presentation day arrived, and I was designated as the pitcher by my team. I presented the project pitch, which was ultimately selected as the winning design by the Montpellier judges.</span>',
+        '<span>In early 2023, the national edition took place in Cannes. By then, our project had progressed, and the startup was almost ready to be established. Unfortunately, we did not make it past the semi-finals of the competition, but it remained a significant learning experience for me in terms of presenting and pitching. I gained valuable insights into the startup process, including aspects such as business canvas, market research, reaching out to potential clients, and developing a minimum viable product (MVP).</span>',
+        '<img src="./ressource/ActInSpace.jpg" alt="Certifications de victoire">'
+    ]
+
+var IutH =
+    [   
+        '<h1 class="toAdd>24H des IUTS informatique</h1>',
+        '<span class="command">What does the \'24H des IUT\' in computer science entail?</span>',
+        '<span>The "24H des IUT Informatique" is an annual 24-hour challenge organized by the University Institutes of Technology (IUTs) in the field of computer science. During this event, teams engage in projects and problem-solving activities aligned with their academic disciplines, fostering creativity, teamwork, and problem-solving skills within the given 24-hour timeframe.</span>',
+        '<span>Notably, the 2023 edition, in which I actively participated, followed a comprehensive structure, featuring an 8-hour algorithmic challenge, an 8-hour web development challenge, and an 8-hour cybersecurity challenge. Throughout these specific timeframes, participating teams showcased their proficiency in algorithmic problem-solving, web development, and cybersecurity knowledge within the competition\'s framework. This format provided students, including myself, with the opportunity to demonstrate their expertise across various facets of computer science during the 24-hour event.</span>',
+        '<span class="command">My participation</span>',
+        '<span>During my participation in the "24H des IUT" with my team GLAB, we finished 3rd in the web challenge, where my involvement was more focused on ideation and project presentation than on the web development itself. Next was the algorithmic challenge, which turned out to be our setback, landing us in 18th place. However, in the cybersecurity challenge, I excelled in reverse engineering, OSINT (Open-source intelligence), network analysis, and website attacks, leading us to a 4th-place finish.</span>',
+        '<img src="./ressource/algorithmResult.jpg"><img src="./ressource/webResult.jpg"><img src="./ressource/cybersecurityResult.jpg"',
     ]
 
 var certifications =
@@ -610,9 +638,27 @@ document.addEventListener('DOMContentLoaded', function() {
                     addTextToResults(value);
                 })
                 break;
+            case "24HIUT":
+                clearInput();
+                IutH.forEach(value => {
+                    addTextToResults(value);
+                })
+                break;
             case "skill":
                 clearInput();
                 skill.forEach(value =>{
+                    addTextToResults(value);
+                })
+                break;
+            case "events":
+                clearInput();
+                events.forEach(value =>{
+                    addTextToResults(value);
+                })
+                break;
+            case "ActInSpace":
+                clearInput();
+                ActInSpace.forEach(value =>{
                     addTextToResults(value);
                 })
                 break;

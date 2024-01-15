@@ -294,6 +294,8 @@ var info =
         '<br>',
         '<span class="command">Certifications</span> The Certifications that i got through online courses.',
         '<br>',
+        '<span class="command">Events</span> The two major event of my career',
+        '<br>',
         '<span class="command">Formations</span> What is my educational background ?',
         '<br>',
         '<span class="command">Hobbies</span> My hobbies and passion ' ,
@@ -406,7 +408,7 @@ var IutH =
         '<span>Notably, the 2023 edition, in which I actively participated, followed a comprehensive structure, featuring an 8-hour algorithmic challenge, an 8-hour web development challenge, and an 8-hour cybersecurity challenge. Throughout these specific timeframes, participating teams showcased their proficiency in algorithmic problem-solving, web development, and cybersecurity knowledge within the competition\'s framework. This format provided students, including myself, with the opportunity to demonstrate their expertise across various facets of computer science during the 24-hour event.</span>',
         '<span class="command">My participation</span>',
         '<span>During my participation in the "24H des IUT" with my team GLAB, we finished 3rd in the web challenge, where my involvement was more focused on ideation and project presentation than on the web development itself. Next was the algorithmic challenge, which turned out to be our setback, landing us in 18th place. However, in the cybersecurity challenge, I excelled in reverse engineering, OSINT (Open-source intelligence), network analysis, and website attacks, leading us to a 4th-place finish.</span>',
-        '<img src="./ressource/algorithmResult.jpg"><img src="./ressource/webResult.jpg"><img src="./ressource/cybersecurityResult.jpg"',
+        '<img src="./ressource/algorithmResult.jpg"><img src="./ressource/webResult.jpg"><img src="./ressource/cybersecurityResult.jpg"'
     ]
 
 var certifications =
@@ -638,9 +640,15 @@ document.addEventListener('DOMContentLoaded', function() {
                     addTextToResults(value);
                 })
                 break;
-            case "24HIUT":
+            case "24Hiut":
                 clearInput();
                 IutH.forEach(value => {
+                    addTextToResults(value);
+                })
+                break;
+            case "actinspace":
+                clearInput();
+                ActInSpace.forEach(value =>{
                     addTextToResults(value);
                 })
                 break;

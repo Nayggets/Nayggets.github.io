@@ -311,9 +311,6 @@ var info =
         '<span class="command">Skill</span> Listing of my skill',
         '<br>',
         '<span class="command">The-Future</span> Future Plans',
-        '<br>',
-        '<a href="./Restricted_access/index.html">Assessment Portfolio</a> This is restricted to the professor of the IUT of Montpellier-Sète.'
-
     ]
 
 var skill =

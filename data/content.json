@@ -1,1 +1,76 @@
+{
+  "resume": [
+    "$ cd importantStuff/",
+    "$ loading resume.png",
+    "> Here is my last resume",
+    {
+      "image": "assets/resume.png",
+      "size" : "600px"
+    }
 
+  ],
+  "about me": [
+    "$ cd importantStuff/",
+    "$ loading about.txt",
+    "> Name: Quentin MELOTTE",
+    "> Title: Apprentice engineer researcher in compilation and embedded systems",
+    "> Company: CEA (French Alternative Energies and Atomic Energy Commission)",
+    "> hard Skills: see the skills section",
+    "> Education: Diplôme d’Ingénieur (equivalent to MSc) in Intelligent Systems & Cybersecurity – Esisar, Grenoble INP, France",
+    "> Languages: English, French",
+    "> Soft Skills: Curious, ambitious, and driven by challenges, I learn quickly—especially when I'm passionate about the subject.",
+    "> Passion : Computer science, Embedded Systems, Robotics, Tabletop-game, Car culture (especially japaness)",
+    "> Goal : Understand principle concept of Computer science so i can better understand how works all the materials i use and how i can create my own"
+  ],
+  "certifications": [
+    "$ cd pride",
+    "$ loading certifications.txt",
+    "> Build Your Own RealTime OS (RTOS) From Ground Up™ on ARM 1 - Udemy",
+    "> The Linux Command Line Bootcamp : Beginner to Power User - Udemy",
+    "> The Git & Github Bootcamp - Udemy",
+    "> Creating a Chip-8 Emulator in C - Udemy",
+    "> Developping a C Compiler From Scratch - Udemy",
+    "> Complete x86 Assembly Programming | 120+ Pratical Exercises - Udemy",
+    "> x86 Assembly Language Programming from Ground Up tm - Udemy",
+    "> Operating System from scratch Part1 to Part4 - Udemy",
+    "> Build a Modern Computer from First Principles: From NAND to Tetris Part I(Project-Centered-Course) - Coursera",
+    "> Build a Modern Computer from First Principles: From NAND to Tetris Part II (Project-Centered-Course) - Coursera",
+    "> DevOps Formation, CI/CD From A to Z - Udemy"
+  ],
+  
+  "formation" : [
+    "$ cd importantStuff",
+    "$ loading formation.txt"
+  ],
+
+  "projects": [
+    "$ cd pride",
+    "$ loading projects.txt"
+  ],
+
+  "skills": [
+    "$ cd knowledge",
+    "$ loading skills.txt"
+  ],
+
+  "social": [
+    "$ cd personnalStuff",
+    "$ loading social.txt"
+  ],
+
+  "ambition": [
+    "$ cd personnalStuff",
+    "$ loading ambition.dream"
+  ],
+
+  "events": [
+    "$ cd personnalStuff",
+    "$ loading event.txt"
+  ],
+
+  "bibliotemple": [
+    "$ cd bibliotemple",
+    "$ please wait loading all the article that i read and finded good"
+  ]
+
+}

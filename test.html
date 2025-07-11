@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cyberpunk Terminal Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #0d0d0d;
+      color: #00ffcc;
+      font-family: 'Courier New', monospace;
+      overflow-x: hidden;
+    }
+
+    nav {
+      background: #111;
+      padding: 10px 20px;
+      display: flex;
+      gap: 20px;
+      border-bottom: 2px solid #00ffcc;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: #00ffcc;
+      text-decoration: none;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: #ff00ff;
+    }
+
+    #terminal {
+      padding: 20px;
+      white-space: pre-wrap;
+      font-size: 16px;
+      min-height: 90vh;
+    }
+
+    .blinking-cursor {
+      display: inline-block;
+      width: 10px;
+      background: #00ffcc;
+      animation: blink 1s step-start infinite;
+    }
+
+    @keyframes blink {
+      50% { background: transparent; }
+    }
+
+    img {
+      margin-top: 15px;
+      max-width: 100%;
+      display: block;
+      opacity: 0;
+      transition: opacity 1s ease-in;
+    }
+
+    img.show {
+      opacity: 1;
+    }
+	nav button {
+	  background: none;
+	  border: none;
+	  color: #00ffcc;
+	  font-family: inherit;
+	  font-size: 1em;
+	  cursor: pointer;
+	  padding: 0;
+	  margin: 0;
+	}
+
+	nav button:hover {
+	  color: #ff00ff;
+	}
+  </style>
+</head>
+<body>
+<nav>
+  <button onclick="showSection('About Me')">About Me</button>
+  <button onclick="showSection('Resume')">Resume</button>
+  <button onclick="showSection('Resume')">Formation</button>
+  <button onclick="showSection('About Me')">Projects</button>
+  <button onclick="showSection('Certifications')">Skill</button>
+  <button onclick="showSection('Certifications')">Certifications</button>
+  <button onclick="showSection('Certifications')">Social</button>
+  <button onclick="showSection('Certifications')">Ambition</button>
+  <button onclick="showSection('Certifications')">Events</button>
+  <button onclick="showSection('Certifications')">Bibliotemple</button>
+</nav>
+
+
+<div id="terminal">
+  <span class="blinking-cursor"></span>
+</div>
+
+<script>
+const terminal = document.getElementById("terminal");
+let cursor = document.querySelector(".blinking-cursor");
+
+function clearTerminal() {
+  terminal.innerHTML = '<span class="blinking-cursor"></span>';
+  cursor = document.querySelector(".blinking-cursor");
+}
+
+function typeLine(text, delay = 30) {
+  return new Promise(resolve => {
+    let i = 0;
+    const line = document.createElement("span");
+    terminal.insertBefore(line, cursor);
+    const interval = setInterval(() => {
+      line.textContent += text[i];
+      i++;
+      if (i >= text.length) {
+        clearInterval(interval);
+        terminal.insertBefore(document.createElement("br"), cursor);
+        resolve();
+      }
+    }, delay);
+  });
+}
+
+async function showSection(section) {
+  clearTerminal();
+
+  await typeLine(`$ cd ${section.toLowerCase().replace(" ", "_")}`);
+  await typeLine(`$ loading ${section}...\n`);
+
+  if (section === "Resume") {
+    await typeLine("> Name: Jean Dupont");
+    await typeLine("> Title: Embedded Systems Engineer");
+    await typeLine("> Skills: C, C++, RTOS, Robotics, ARM, STM32");
+    await typeLine("> Education: Master's in Embedded Systems - INSA Lyon");
+    await typeLine("> Languages: English, French, C++ (😉)");
+
+    // Image (optionnelle)
+    const img = document.createElement("img");
+    img.src = "https://via.placeholder.com/300x150.png?text=Resume+Photo";
+    terminal.insertBefore(img, cursor);
+    setTimeout(() => img.classList.add("show"), 100);
+  }
+
+  else if (section === "About Me") {
+    await typeLine("> About: Passionate about robotics and real-time systems.");
+    await typeLine("> Loves retro-futurism, cyberpunk and AI development.");
+  }
+
+  else if (section === "Certifications") {
+    await typeLine("> Cert: ARM Cortex-M4 Fundamentals - Coursera");
+    await typeLine("> Cert: Embedded Linux - Udemy");
+    await typeLine("> Cert: FPGA Basics - edX");
+  }
+}
+</script>
+
+</body>
+</html>

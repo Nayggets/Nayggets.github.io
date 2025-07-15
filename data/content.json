@@ -40,12 +40,21 @@
   
   "formation" : [
     "$ cd importantStuff",
-    "$ loading formation.txt"
+    "$ loading formation.txt",
+    "> Engineering degree Specialized in Cybesecure Intelligent Systems  2024-2027(in progress)",
+    "> Valence Grenoble-INP ESISAR",
+    "> The main goal for me is to strengthen my foundation in electronics, hardware design, computer architecture, RF systems, and embedded systems while refining the skills acquired during my Bachelor's. (See ESISAR program here : )",
+    "<br>",
+    "Bachelor of Computer Science specialized in Low level programming application, Cryptographie and System Cybersécurity    2021-2024",
+    "Montpellier University"
   ],
 
   "projects": [
     "$ cd pride",
-    "$ loading projects.txt"
+    "$ loading projects.txt",
+    "> Since i started computer science in 2019 i have done many projects to use and understand well all the concepts i learn by reading papers or listening/watching courses/lecture.",
+    "> so here is the list of all my project with their GitHub Repository (if the project is not confidential) a description of the project, what i learn with doing this project and the next step to evolve the project",
+    "> "
   ],
 
   "skills": [

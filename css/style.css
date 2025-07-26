@@ -21,6 +21,7 @@ body {
 
 
 #main-content {
+  position: relative;
   z-index: 10;          /* devant le SVG */
   color: lime;          /* ton style normal */
   font-family: 'Courier New', monospace;
@@ -68,6 +69,7 @@ nav button:hover {
 }
 
 #terminal {
+  position: relative;  /* <--- ajoute ça aussi */
   line-height: 1.8;
   padding: 20px;
   white-space: pre-wrap;

@@ -8,44 +8,58 @@
 </head>
 
 <body>
-<svg viewBox="0 0 800 800" class="bg-svg" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <g id="cpuShape">
-      <rect x="-15" y="-15" width="30" height="30" rx="3" fill="#00f0ff" stroke="#0ff" stroke-width="2" />
-      <!-- Pins -->
-      <rect x="-20" y="-12" width="5" height="4" fill="#0ff" />
-      <rect x="-20" y="-2" width="5" height="4" fill="#0ff" />
-      <rect x="-20" y="8" width="5" height="4" fill="#0ff" />
-      <rect x="15" y="-12" width="5" height="4" fill="#0ff" />
-      <rect x="15" y="-2" width="5" height="4" fill="#0ff" />
-      <rect x="15" y="8" width="5" height="4" fill="#0ff" />
-      <rect x="-12" y="-20" width="4" height="5" fill="#0ff" />
-      <rect x="-2" y="-20" width="4" height="5" fill="#0ff" />
-      <rect x="8" y="-20" width="4" height="5" fill="#0ff" />
-      <rect x="-12" y="15" width="4" height="5" fill="#0ff" />
-      <rect x="-2" y="15" width="4" height="5" fill="#0ff" />
-      <rect x="8" y="15" width="4" height="5" fill="#0ff" />
-    </g>
-  </defs>
+<div class="background-container">
+  <svg id="background-diagram" width="100%" height="100%" viewBox="0 0 1200 600"
+      style="background:#0d0d0d;display:block;margin:auto;" xmlns="http://www.w3.org/2000/svg">
 
-  <!-- Processors -->
-  <g id="cpu1" class="cpu" transform="translate(100, 100)"><use href="#cpuShape"/></g>
-  <g id="cpu2" class="cpu" transform="translate(300, 80)"><use href="#cpuShape"/></g>
-  <g id="cpu3" class="cpu" transform="translate(500, 120)"><use href="#cpuShape"/></g>
-  <g id="cpu4" class="cpu" transform="translate(150, 300)"><use href="#cpuShape"/></g>
-  <g id="cpu5" class="cpu" transform="translate(400, 300)"><use href="#cpuShape"/></g>
-  <g id="cpu6" class="cpu" transform="translate(600, 300)"><use href="#cpuShape"/></g>
-  <g id="cpu7" class="cpu" transform="translate(350, 500)"><use href="#cpuShape"/></g>
+    <!-- BUS PRINCIPAL -->
+    <line id="bus" x1="200" y1="300" x2="1000" y2="300" stroke="#666" stroke-width="6"/>
 
-  <!-- Links (all red by default) -->
-  <line id="l1" x1="100" y1="100" x2="300" y2="80" class="link"/>
-  <line id="l2" x1="300" y1="80" x2="500" y2="120" class="link"/>
-  <line id="l3" x1="500" y1="120" x2="400" y2="300" class="link"/>
-  <line id="l4" x1="400" y1="300" x2="150" y2="300" class="link"/>
-  <line id="l5" x1="400" y1="300" x2="600" y2="300" class="link"/>
-  <line id="l6" x1="400" y1="300" x2="350" y2="500" class="link"/>
-  <line id="l7" x1="150" y1="300" x2="350" y2="500" class="link"/>
-</svg>
+    <!-- Microcontrôleur (à gauche, agrandi) -->
+    <rect id="mcu" x="100" y="250" width="80" height="100" fill="#222" stroke="#0ff" stroke-width="3"/>
+    <text x="140" y="305" fill="#0ff" font-size="18" text-anchor="middle">MCU</text>
+    <line class="tap" data-comp="mcu" x1="180" y1="300" x2="200" y2="300" stroke="#444" stroke-width="3"/>
+
+    <!-- ROM pile au-dessus du MCU -->
+    <rect id="rom" x="100" y="150" width="80" height="60" fill="#222" stroke="#ff0" stroke-width="2"/>
+    <text x="140" y="185" fill="#ff0" font-size="14" text-anchor="middle">ROM</text>
+    <line class="tap" data-comp="rom" x1="140" y1="210" x2="140" y2="250" stroke="#444" stroke-width="3"/>
+
+    <!-- Capteur 1 -->
+    <rect id="cap1" x="400" y="100" width="60" height="60" fill="#222" stroke="#0f0" stroke-width="2"/>
+    <text x="430" y="130" fill="#0f0" font-size="14" text-anchor="middle">CAP1</text>
+    <line class="tap" data-comp="cap1" x1="430" y1="160" x2="430" y2="300" stroke="#444" stroke-width="3"/>
+
+    <!-- Capteur 2 -->
+    <rect id="cap2" x="600" y="100" width="60" height="60" fill="#222" stroke="#0f0" stroke-width="2"/>
+    <text x="630" y="130" fill="#0f0" font-size="14" text-anchor="middle">CAP2</text>
+    <line class="tap" data-comp="cap2" x1="630" y1="160" x2="630" y2="300" stroke="#444" stroke-width="3"/>
+
+    <!-- Actionneur -->
+    <rect id="act" x="400" y="400" width="60" height="60" fill="#222" stroke="#f0f" stroke-width="2"/>
+    <text x="430" y="430" fill="#f0f" font-size="14" text-anchor="middle">ACT</text>
+    <line class="tap" data-comp="act" x1="430" y1="400" x2="430" y2="300" stroke="#444" stroke-width="3"/>
+
+    <!-- Timer -->
+    <rect id="timer" x="600" y="400" width="60" height="60" fill="#222" stroke="#f80" stroke-width="2"/>
+    <text x="630" y="430" fill="#f80" font-size="14" text-anchor="middle">TIMER</text>
+    <line class="tap" data-comp="timer" x1="630" y1="400" x2="630" y2="300" stroke="#444" stroke-width="3"/>
+
+    <!-- DMA -->
+    <rect id="dma" x="800" y="100" width="60" height="60" fill="#222" stroke="#0ff" stroke-width="2"/>
+    <text x="830" y="130" fill="#0ff" font-size="14" text-anchor="middle">DMA</text>
+    <line class="tap" data-comp="dma" x1="830" y1="160" x2="830" y2="300" stroke="#444" stroke-width="3"/>
+
+    <!-- MEM (à droite, agrandi) -->
+    <rect id="mem" x="980" y="250" width="100" height="100" fill="#222" stroke="#ff0" stroke-width="3"/>
+    <text x="1030" y="305" fill="#ff0" font-size="18" text-anchor="middle">MEM</text>
+    <line class="tap" data-comp="mem" x1="980" y1="300" x2="1000" y2="300" stroke="#444" stroke-width="3"/>
+
+
+  </svg>
+</div>
+<div id="main-content">
+
 
   <nav>
 	  <button onclick="showSection('About Me')">About Me</button>
@@ -63,7 +77,7 @@
   <div id="terminal">
     <span class="blinking-cursor"></span>
   </div>
-
+</div>
   <script src="js/terminal.js"></script>
 </body>
 </html>

@@ -1,8 +1,34 @@
+
+
 body {
   margin: 0;
+  padding: 0;
   background-color: #0d0d0d;
-  color:  #4bff21;
+  color:  #00f0ff;
+}
+
+#background-diagram {
+  position: fixed;       /* reste collé en fond même au scroll */
+  bottom: 0;
+  width: 60%;
+  height: 60%;
+  right: 0;
+  z-index: 0;            /* en arrière-plan */
+  pointer-events: none;  /* très important pour que le SVG ne bloque pas les clics */
+  background-color: #0d0d0d;
+
+}
+
+
+#main-content {
+  z-index: 10;          /* devant le SVG */
+  color: #00f0ff;          /* ton style normal */
   font-family: 'Courier New', monospace;
+
+}
+
+span{
+  background-color: #0d0d0d;
 }
 
 nav {
@@ -48,45 +74,16 @@ nav button:hover {
   min-height: 90vh;
   font-size: 1em;
 }
-.bg-svg {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      pointer-events: none;
-    }
-
-    .link {
-      stroke: #aa0000;
-      stroke-width: 3;
-    }
-
-    .link.active {
-      stroke: #00ff00;
-      transition: stroke 0.3s;
-    }
-
-    .cpu rect {
-      transition: filter 0.3s;
-    }
-
-    .cpu.active rect {
-      filter: drop-shadow(0 0 6px #00ff00);
-    }
-.blinking-cursor {
-  display: inline-block;
-  width: 10px;
-  background: #00ffcc;
-  animation: blink 1s step-start infinite;
-}
-
-@keyframes blink {
-  50% {
-    background: transparent;
+svg { width:100%; height:100vh; display:block; background:#0d0d0d; }
+  .device rect {
+    fill:#222; stroke:#0ff; stroke-width:2; rx:6;
   }
-}
+  .label {
+    font-family:monospace; font-size:14px; fill:#0ff; text-anchor:middle;
+  }
+  .bus { stroke:#555; stroke-width:4; }
+  .active { stroke:red !important; }
+  .done { stroke:lime !important; }
 
 img.terminal-image {
   display: block;

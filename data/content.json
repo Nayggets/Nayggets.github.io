@@ -168,17 +168,22 @@
 
   "ambition": [
     "$ cd personnalStuff",
-    "$ loading ambition.dream"
+    "$ loading ambition.dream",
+    "> My ambition is to become a good researcher or/and a good inventor. I want to learn during my whole life and use my knowledge to craft , make , invent, innovate and research.",
+    "> I would like to became a researcher in Embedded System i don't know in what type of domain but Aerospatial and Robotics looks interesting"
   ],
 
   "events": [
     "$ cd personnalStuff",
-    "$ loading event.txt"
+    "$ loading event.txt",
+    "> Here is the list of events that i participate and their goals : ",
+    "> In writing" 
   ],
 
   "bibliotemple": [
     "$ cd bibliotemple",
-    "$ please wait loading all the article that i read and finded good"
+    "$ please wait loading all the scientific article or video that i read or watch and finded good since August 2025 : ",
+    "> In writing"
   ]
 
 }

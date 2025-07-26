@@ -22,7 +22,7 @@ body {
 
 #main-content {
   z-index: 10;          /* devant le SVG */
-  color: #00f0ff;          /* ton style normal */
+  color: lime;          /* ton style normal */
   font-family: 'Courier New', monospace;
 
 }

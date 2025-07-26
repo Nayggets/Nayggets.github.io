@@ -48,15 +48,28 @@
     "> while refining the skills acquired during my Bachelor's. (See ESISAR program here : )",
     "> Second Experience",
     "> Bachelor of Computer Science specialized in Low level programming application, Cryptographie and System Cybersécurity    2021-2024",
-    "> Montpellier University"
+    "> Montpellier University",
+    "> I join the Montpellier University to developped my programming and low level compréhension skills, and it work pretty well I also developped great knowledge in Network architecture and developpement : ",
   ],
 
   "projects": [
     "$ cd pride",
     "$ loading projects.txt",
     "> Since i started computer science in 2019 i have done many projects to use and understand well all the concepts i learn by reading papers or listening/watching courses/lecture.",
-    "> so here is the list of all my project with their GitHub Repository (if the project is not confidential) a description of the project, what i learn with doing this project and the next step to evolve the project",
-    "> "
+    "> so here is the list of all my projects with their GitHub Repository (if the project is not confidential) a description of the project, what i learn with doing this project and the next step to evolve the project",
+    "> Project 1 : ",
+    "> Axolotl",
+    "> Axolotl is multiple project under the name of one",
+    "> Axolotl is a full suit of software tools and hardware design for a home made Processor. The goal was to learn how to simulate a processor and create an assembler using C/C++ language. see the steps to make an ABI and design the processor architecture. And finally design it and test it in VHDL.",
+    "> Github Link : https://github.com/Nayggets/Axolotl",
+    "> Project 2 : ",
+    "> SecureFileBackupProtocol",
+    "> SecureFileBackupProtocol is an application that store the file that you want to store on a distant server that use a cypher and an authentification protocol to secure your data from being steal. You can install it on a raspberry pi and unsing it like a NAS",
+    "> Project 3 (confidential): ",
+    "> During my apprenticeship in ActiaTelecom i was asked to implement 3 network protocol for securising the transmission layer of the \"Hyperviseur Actia\"(the software that was developped for city vidéo protection)",
+    "> So my goal was to implement in C++ 3 protocol to securise the sending of data (meta data, vidéo ,command). So i did a efficiente implementation of MIKEY,SRTP and AES_CTR.", 
+    "> Actually my implementation is still running on the software transmission layer and help protect the video from hackers on differents french city",
+    "> See more project on my github : https://github.com/Nayggets/"
   ],
 
   "skills": [
@@ -81,7 +94,7 @@
     "   * BSD",
     "   * Windows",
     "   * Unix",
-    "> Microprocessors : ",
+    "> Embedded systems : ",
     "   * Stm(32,8)",
     "   * arduino",
     "   * ESP32",
@@ -152,10 +165,6 @@
     "   * Structural"
   ],
 
-  "social": [
-    "$ cd personnalStuff",
-    "$ loading social.txt"
-  ],
 
   "ambition": [
     "$ cd personnalStuff",

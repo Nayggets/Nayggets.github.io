@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+
+    font-family: "Courier New", monospace;
+    color: white;
+
+    background:
+        radial-gradient(
+            circle at 50% 45%,
+            #123d72 0%,
+            #071a35 35%,
+            #020914 65%,
+            #000000 100%
+        );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Scanlines façon vieux écran */
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    pointer-events: none;
+
+    background: repeating-linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.015) 0px,
+        rgba(255, 255, 255, 0.015) 1px,
+        transparent 1px,
+        transparent 4px
+    );
+}
+
+
+/* =========================
+   CONTENEUR PRINCIPAL
+   ========================= */
+
+.container {
+    width: min(1000px, 90%);
+
+    padding: 60px 50px;
+
+    text-align: center;
+
+    border: 1px solid rgba(100, 180, 255, 0.35);
+
+    background: rgba(0, 10, 25, 0.45);
+
+    box-shadow:
+        0 0 40px rgba(0, 100, 255, 0.15),
+        inset 0 0 40px rgba(0, 100, 255, 0.05);
+
+    backdrop-filter: blur(4px);
+}
+
+
+/* =========================
+   TEXTE TERMINAL
+   ========================= */
+
+.terminal {
+    margin-bottom: 25px;
+
+    color: #72bfff;
+
+    font-size: 14px;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   TITRE
+   ========================= */
+
+h1 {
+    margin: 0;
+
+    font-size: clamp(40px, 7vw, 80px);
+
+    font-weight: normal;
+
+    letter-spacing: 8px;
+
+    text-shadow:
+        0 0 10px #147cff,
+        0 0 30px rgba(20, 124, 255, 0.6);
+}
+
+
+/* =========================
+   SOUS-TITRE
+   ========================= */
+
+.subtitle {
+    margin-top: 20px;
+    margin-bottom: 55px;
+
+    color: #8ca9c8;
+
+    font-size: 15px;
+
+    letter-spacing: 3px;
+}
+
+
+/* =========================
+   BOUTONS
+   ========================= */
+
+.buttons {
+    display: flex;
+
+    gap: 30px;
+
+    justify-content: center;
+}
+
+
+/* =========================
+   BOUTON DE CHOIX
+   ========================= */
+
+.choice {
+    width: 320px;
+    height: 180px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    color: white;
+
+    border: 1px solid #287fd8;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(15, 65, 120, 0.55),
+            rgba(2, 15, 30, 0.8)
+        );
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+
+/* Effet au survol */
+
+.choice:hover {
+    transform: translateY(-6px);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(25, 100, 180, 0.7),
+            rgba(3, 25, 50, 0.9)
+        );
+
+    box-shadow:
+        0 0 20px rgba(30, 130, 255, 0.4),
+        inset 0 0 20px rgba(30, 130, 255, 0.1);
+}
+
+
+/* Effet au clic */
+
+.choice:active {
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   ICÔNE
+   ========================= */
+
+.choice .icon {
+    margin-bottom: 15px;
+
+    font-size: 42px;
+
+    color: #6dbbff;
+
+    text-shadow:
+        0 0 15px #1684ff;
+}
+
+
+/* =========================
+   NOM DU BOUTON
+   ========================= */
+
+.choice .title {
+    font-size: 24px;
+
+    letter-spacing: 4px;
+}
+
+
+/* =========================
+   DESCRIPTION
+   ========================= */
+
+.choice .description {
+    margin-top: 10px;
+
+    color: #7692ad;
+
+    font-size: 12px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+.footer {
+    margin-top: 45px;
+
+    color: #3e5a73;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 700px) {
+
+    body {
+        overflow: auto;
+    }
+
+    .container {
+        padding: 40px 20px;
+    }
+
+    .buttons {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .choice {
+        width: 100%;
+
+        max-width: 320px;
+    }
+}

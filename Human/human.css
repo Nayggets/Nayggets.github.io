@@ -2027,3 +2027,18 @@ footer {
     padding: 40px;
     opacity: 0.6;
 }
+
+
+.research-poster a {
+    display: block;
+    cursor: pointer;
+}
+
+.research-poster img {
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.research-poster a:hover img {
+    transform: scale(1.02);
+    opacity: 0.9;
+}

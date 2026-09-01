@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Projects — Quentin Mélotte</title>
+    <script src="../js/navigation.js"></script>
+
+    <link rel="stylesheet" href="./human.css">
+
+</head>
+
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <div id="navbar"></div>
+
+
+    <main class="projects-page">
+
+        <div class="projects-header">
+
+            <span class="section-number">
+                04
+            </span>
+
+            <h1>
+                Projects
+            </h1>
+
+            <p>
+                A selection of personal, academic and research projects.
+            </p>
+
+        </div>
+
+
+        <div class="projects-list">
+
+
+            <!-- =================================================
+                 PROJECT 1
+                 ================================================= -->
+
+            <article class="project-card">
+
+                <div class="project-info">
+
+                    <span class="project-index">
+                        PROJECT_01
+                    </span>
+
+                    <h2>
+                        CHIP-8 Emulator
+                    </h2>
+
+                    <p>
+                        A CHIP-8 emulator written in C.
+                        The project explores instruction decoding,
+                        memory management, virtual machines and
+                        CPU emulation.
+                    </p>
+
+                    <div class="project-meta">
+
+                        <span>
+                            C++
+                        </span>
+
+                        <span>
+                            EMULATION
+                        </span>
+
+                        <span>
+                            LOW-LEVEL
+                        </span>
+
+                        <span>
+                            Graphic lib - SDL
+                        </span>
+                    </div>
+
+                    <a
+                        href="https://github.com/YOUR_USERNAME/chip8"
+                        class="project-github"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub →
+                    </a>
+
+                </div>
+
+
+                <div class="project-demo">
+
+                    <video
+                        controls
+                        preload="metadata"
+                        poster="../assets/projects/chip8.jpg"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+                    >
+                        <source
+                            src="../assets/projects/chip8.mp4"
+                            type="video/mp4"
+                        >
+                    </video>
+
+                    <p class="video-error">
+                        Video unavailable.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 PROJECT 2
+                 ================================================= -->
+
+            <article class="project-card">
+
+                <div class="project-info">
+
+                    <span class="project-index">
+                        PROJECT_02
+                    </span>
+
+                    <h2>
+                        Artemis (Aerial Drone)
+                    </h2>
+
+                    <p>
+                        Artemis is a project I worked on during my second year of engineering school. The goal was to build a flying quadcopter, and I was responsible for the embedded systems.
+                        I set up the STM32 environment for the team and developed the PWM motor control driver, the 9-axis IMU driver and its calibration, as well as drivers for the GPS and LiDAR sensors. I also implemented a basic feedback control loop using control theory for stabilization.
+                        This was one of my favorite technical projects. It was challenging, especially as my first experience working on a complex project with other engineers. Due to time constraints, the drone could only hover in stable conditions without wind.            
+                    </p>
+                    <div class="project-meta">
+
+                        <span>
+                            C/C++
+                        </span>
+
+                        <span>
+                            Embedded System
+                        </span>
+
+                        <span>
+                            STM32
+                        </span>
+
+                        <span>
+                            Control Theory
+                        </span>
+                    </div>
+
+                    <span>
+                        This project is not open source (sorry)
+                    </span>
+
+                </div>
+
+
+                <div class="project-demo">
+
+                    <video
+                        controls
+                        preload="metadata"
+                        poster="../assets/projects/hybrogen.jpg"
+                    >
+
+                        <source
+                            src="../assets/projects/hybrogen.mp4"
+                            type="video/mp4"
+                        >
+
+                        Your browser does not support video playback.
+
+                    </video>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 PROJECT 3
+                 ================================================= -->
+
+            <article class="project-card">
+
+                <div class="project-info">
+
+                    <span class="project-index">
+                        PROJECT_03
+                    </span>
+
+                    <h2>
+                        Axolotl (Processor Suite project)
+                    </h2>
+
+                    <p>
+                        Axolotl is a project composed of several sub-projects. First, I developed a simple CPU in VHDL to deepen my understanding of VHDL and digital simulation, with its own instruction set and ABI.
+
+                        I then designed an assembly language for the processor and developed a translator to convert assembly code into binary. Finally, I developed an emulator capable of running these binaries by emulating the processor and memory.
+
+                        The next steps are to complete the memory management and implement the processor on an FPGA, with a mechanism to load code onto it.
+                    </p>
+                    <div class="project-meta">
+
+                        <span>
+                            C/C++
+                        </span>
+
+                        <span>
+                            Emulation
+                        </span>
+
+                        <span>
+                            Assembly
+                        </span>
+
+                        <span>
+                            VHDL
+                        </span>
+
+                        <span>
+                            FPGA
+                        </span>
+                    </div>
+
+                    <a
+                        href="https://github.com/Nayggets/Axolotl"
+                        class="project-github"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub →
+                    </a>
+
+                </div>
+
+
+
+                <div class="project-demo">
+
+                    <video
+                        controls
+                        preload="metadata"
+                        poster="../assets/projects/hybrogen.jpg"
+                    >
+
+                        <source
+                            src="../assets/projects/hybrogen.mp4"
+                            type="video/mp4"
+                        >
+
+                        Your browser does not support video playback.
+
+                    </video>
+
+                </div>
+
+            </article>
+
+            <!-- =================================================
+                 PROJECT 4 — SecureFileBackupProtocol
+                 ================================================= -->
+
+            <article class="project-card">
+
+                <div class="project-info">
+
+                    <span class="project-index">
+                        PROJECT_04
+                    </span>
+
+                    <h2>
+                        SecureFileBackupProtocol
+                    </h2>
+
+                    <p>
+                        SecureFileBackupProtocol is a project I developed during my studies at the IUT of Montpellier-Sète. The goal was to design a secure and efficient client-server backup system.
+
+                        I developed the protocol to support file and recursive folder backups and restoration, with secure communication using TLS 1.3. I also implemented AES-256 encryption with authentication tags for server-side storage, as well as key generation from a passphrase.
+
+                        The project also includes deletion, installation scripts, and an optimization to avoid backing up files that have not been modified. This project can also be coupled with ubuntu backup to boost recurrency
+
+                        This project gave me a deeper understanding of network protocols, cryptography, secure storage, and the complexity of designing a reliable backup system.
+                    </p>
+
+                    <div class="project-meta">
+
+                        <span>
+                            C
+                        </span>
+
+                        <span>
+                            AES
+                        </span>
+
+                        <span>
+                            TLS
+                        </span>
+
+                        <span>
+                            KDF
+                        </span>
+
+                        <span>
+                            Socket/Network
+                        </span>
+                    </div>
+
+                    <a
+                        href="https://github.com/Nayggets/SecureFileBackupProtocol"
+                        class="project-github"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub →
+                    </a>
+                </div>
+
+
+                
+                <div class="project-demo">
+
+                    <video
+                        controls
+                        preload="metadata"
+                        poster="../assets/projects/hybrogen.jpg"
+                    >
+
+                        <source
+                            src="../assets/projects/hybrogen.mp4"
+                            type="video/mp4"
+                        >
+
+                        Your browser does not support video playback.
+
+                    </video>
+
+                </div>
+
+            </article>
+
+            <!-- =================================================
+                PROJECT 5 — SecureFileBackupProtocol
+                 ================================================= -->
+
+            <article class="project-card">
+
+                <div class="project-info">
+
+                    <span class="project-index">
+                        PROJECT_05
+                    </span>
+
+                    <h2>
+                        AIGomoku
+                    </h2>
+
+                    <p>
+                        This project is an implementation of the Gomoku game, featuring a graphical interface and an AI opponent based on the Minimax algorithm.
+
+                        I implemented several optimizations to explore the game tree more deeply, including Negamax, Zobrist hashing with transposition tables, and move pruning based on board proximity: positions that have no nearby stones are excluded from the search tree, significantly reducing the number of unnecessary nodes.
+
+                        The next step is to implement an evolutionary approach, where multiple AIs play against each other, the best-performing ones are selected, and their evaluation function parameters are mutated over several generations to progressively create a stronger AI.
+                    </p>
+
+                    <div class="project-meta">
+
+                        <span>
+                            Java
+                        </span>
+
+                        <span>
+                            Min-Max
+                        </span>
+
+                        <span>
+                            Machine Learning
+                        </span>
+
+                        <span>
+                            Architecture Optimisation 
+                        </span>
+
+                        <span>
+                            Graphic Interface
+                        </span>
+                    </div>
+
+                    <a
+                        href="https://github.com/Nayggets/AIGomoku"
+                        class="project-github"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub →
+                    </a>
+                </div>
+
+
+                
+                <div class="project-demo">
+
+                    <video
+                        controls
+                        preload="metadata"
+                        poster="../assets/projects/hybrogen.jpg"
+                    >
+
+                        <source
+                            src="../assets/projects/hybrogen.mp4"
+                            type="video/mp4"
+                        >
+
+                        Your browser does not support video playback.
+
+                    </video>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </main>
+
+
+
+</body>
+
+</html>

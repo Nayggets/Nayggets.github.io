@@ -852,26 +852,62 @@ footer {
     font-weight: normal;
 }
 
+/* =========================================================
+   EDUCATION — COURSES
+   ========================================================= */
 
-.education-specialization {
-    color: #a9bac5 !important;
+.course-title {
+    margin: 25px 0 12px;
+
+    color: var(--blue-light);
 
     font-family: "Courier New", monospace;
+    font-size: 11px;
 
-    font-size: 13px !important;
+    letter-spacing: 0.5px;
 }
 
 
-.education-info p {
-    max-width: 700px;
+.course-list {
+    list-style: none;
 
-    color: #899aa5;
+    margin: 0 0 25px;
+    padding: 8px 0 8px 20px;
 
-    font-size: 14px;
-
-    line-height: 1.7;
+    border-left: 1px solid rgba(34, 184, 255, 0.30);
 }
 
+
+.course-list li {
+    position: relative;
+
+    margin: 7px 0;
+    padding-left: 18px;
+
+    color: #8da3ad;
+
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+.course-list li::before {
+    content: ">";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    color: var(--blue-light);
+}
+
+
+.course-list li:hover {
+    color: #ffffff;
+}
 
 .academic-link {
     display: inline-block;
@@ -1313,4 +1349,681 @@ footer {
         grid-template-columns: 1fr;
     }
 
+}
+
+/* =========================================================
+   PROJECTS
+   ========================================================= */
+
+.projects-page {
+    width: min(1200px, 90%);
+
+    margin: 0 auto;
+
+    padding: 140px 0 100px;
+}
+
+
+.projects-header {
+    margin-bottom: 60px;
+}
+
+
+.projects-header h1 {
+    margin: 5px 0 10px;
+
+    color: #e8f1f5;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 42px;
+
+    font-weight: normal;
+}
+
+
+.projects-header p {
+    color: #718895;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   PROJECT CARD
+   ========================================================= */
+
+.projects-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 30px;
+}
+
+
+.project-card {
+    display: grid;
+
+    grid-template-columns: 40% 60%;
+
+    min-height: 350px;
+
+    border: 1px solid rgba(50, 170, 220, 0.25);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0, 20, 35, 0.85),
+            rgba(0, 8, 18, 0.95)
+        );
+
+    box-shadow:
+        0 0 20px rgba(0, 120, 200, 0.05);
+}
+
+
+.project-info {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding: 40px;
+
+    border-right: 1px solid rgba(50, 170, 220, 0.20);
+}
+
+
+.project-index {
+    margin-bottom: 15px;
+
+    color: var(--blue-light);
+
+    font-family: "Courier New", monospace;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+}
+
+
+.project-info h2 {
+    margin: 0 0 20px;
+
+    color: #e8f1f5;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 28px;
+
+    font-weight: normal;
+}
+
+
+.project-info p {
+    max-width: 430px;
+
+    margin: 0;
+
+    color: #899aa5;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   PROJECT META
+   ========================================================= */
+
+.project-meta {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 25px;
+}
+
+
+.project-meta span {
+    padding: 5px 8px;
+
+    border: 1px solid rgba(50, 170, 220, 0.2);
+
+    color: #6e9caf;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   PROJECT LINK
+   ========================================================= */
+
+.project-github {
+    margin-top: auto;
+
+    padding-top: 25px;
+
+    color: var(--blue-light);
+
+    font-family: "Courier New", monospace;
+
+    font-size: 12px;
+
+    text-decoration: none;
+}
+
+
+.project-github:hover {
+    color: white;
+
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   PROJECT DEMO
+   ========================================================= */
+
+.project-demo {
+    min-width: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 25px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(0, 100, 170, 0.12),
+            rgba(0, 0, 0, 0.35)
+        );
+}
+
+
+.project-demo video {
+    display: block;
+
+    width: 100%;
+
+    max-height: 420px;
+
+    object-fit: contain;
+
+    border: 1px solid rgba(50, 170, 220, 0.25);
+
+    background: black;
+}
+
+
+/* =========================================================
+   RETRO TERMINAL
+   ========================================================= */
+
+.terminal {
+    width: 100%;
+
+    max-width: 550px;
+
+    border: 1px solid rgba(50, 170, 220, 0.4);
+
+    background: #02080c;
+
+    box-shadow:
+        0 0 20px rgba(0, 150, 220, 0.08);
+}
+
+
+.terminal-header {
+    padding: 8px 12px;
+
+    border-bottom: 1px solid rgba(50, 170, 220, 0.3);
+
+    color: var(--blue-light);
+
+    font-family: "Courier New", monospace;
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+}
+
+
+.terminal-screen {
+    min-height: 180px;
+
+    padding: 20px;
+
+    color: #8ac8df;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+.terminal-cursor {
+    animation: blink 1s steps(1) infinite;
+}
+
+
+@keyframes blink {
+
+    50% {
+        opacity: 0;
+    }
+
+}
+
+
+.terminal-controls {
+    display: flex;
+
+    gap: 8px;
+
+    padding: 10px;
+
+    border-top: 1px solid rgba(50, 170, 220, 0.2);
+}
+
+
+.terminal-controls button {
+    padding: 7px 15px;
+
+    border: 1px solid rgba(50, 170, 220, 0.3);
+
+    background: transparent;
+
+    color: var(--blue-light);
+
+    font-family: "Courier New", monospace;
+
+    font-size: 10px;
+
+    cursor: pointer;
+}
+
+
+.terminal-controls button:hover {
+    background: rgba(0, 130, 200, 0.15);
+
+    border-color: var(--blue-light);
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .projects-page {
+        padding-top: 110px;
+    }
+
+
+    .project-card {
+        grid-template-columns: 1fr;
+    }
+
+
+    .project-info {
+        border-right: none;
+
+        border-bottom: 1px solid rgba(50, 170, 220, 0.20);
+    }
+
+
+    .project-demo {
+        min-height: 250px;
+    }
+
+}
+
+
+/* =========================================================
+   RESEARCH
+   ========================================================= */
+
+.research-page {
+    padding-top: 130px;
+}
+
+
+.research-list {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+    margin-top: 50px;
+
+}
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.research-card {
+    min-width: 0;
+}
+
+
+.research-terminal {
+
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    box-sizing: border-box;
+
+    border: 1px solid rgba(70, 160, 200, 0.25);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(0, 20, 32, 0.9),
+            rgba(0, 5, 12, 0.95)
+        );
+
+    transition:
+        border-color 0.25s ease,
+        transform 0.25s ease;
+
+}
+
+
+.research-terminal:hover {
+
+    border-color: rgba(50, 190, 255, 0.55);
+
+    transform: translateY(-3px);
+
+}
+
+
+/* =========================================================
+   TERMINAL HEADER
+   ========================================================= */
+
+.research-terminal-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 9px 13px;
+
+    border-bottom: 1px solid rgba(70, 160, 200, 0.18);
+
+    color: #557482;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* =========================================================
+   CONFERENCE
+   ========================================================= */
+
+.research-conference {
+
+    min-height: 85px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 15px 22px;
+
+    box-sizing: border-box;
+
+    border-bottom: 1px solid rgba(70, 160, 200, 0.12);
+
+}
+
+
+.research-conference img {
+
+    width: 65px;
+
+    height: 50px;
+
+    object-fit: contain;
+
+    filter: grayscale(100%);
+
+    opacity: 0.75;
+
+}
+
+
+.research-terminal:hover
+.research-conference img {
+
+    filter: grayscale(0%);
+
+    opacity: 1;
+
+}
+
+
+.research-conference span {
+
+    color: #8da8b5;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* =========================================================
+   PAPER
+   ========================================================= */
+
+.research-body {
+
+    padding: 25px 22px 15px;
+
+}
+
+
+.research-prompt {
+
+    color: #29b8ff;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 10px;
+
+}
+
+
+.research-body h2 {
+
+    margin: 12px 0 10px;
+
+    color: #e4edf1;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 21px;
+
+    font-weight: normal;
+
+    line-height: 1.35;
+
+}
+
+
+.research-body p {
+
+    margin: 0;
+
+    color: #617783;
+
+    font-size: 11px;
+
+}
+
+
+/* =========================================================
+   POSTER
+   ========================================================= */
+
+.research-poster {
+
+    height: 260px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin: 5px 22px 20px;
+
+    overflow: hidden;
+
+    background: rgba(0, 0, 0, 0.25);
+
+}
+
+
+.research-poster img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+
+}
+
+
+/* =========================================================
+   NO POSTER
+   ========================================================= */
+
+.research-no-poster {
+
+    border: 1px dashed rgba(70, 150, 180, 0.15);
+
+}
+
+
+.research-no-poster span {
+
+    color: rgba(90, 130, 145, 0.3);
+
+    font-family: "Courier New", monospace;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.research-footer {
+
+    margin-top: auto;
+
+    padding: 12px 22px 18px;
+
+}
+
+
+.research-footer a {
+
+    color: #29b8ff;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 10px;
+
+    text-decoration: none;
+
+}
+
+
+.research-footer a:hover {
+
+    color: white;
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .research-list {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .research-page {
+
+        padding-top: 110px;
+
+    }
+
+    .research-poster {
+
+        height: 220px;
+
+    }
+
+}
+
+.video-error {
+    display: none;
+    text-align: center;
+    padding: 40px;
+    opacity: 0.6;
 }

@@ -1,82 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <title>QM Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Quentin Mélotte — Nerd Mode</title>
+
+    <link rel="stylesheet" href="./nerd.css">
+
 </head>
 
+
 <body>
-<div class="background-container">
-  <svg id="background-diagram" width="100%" height="100%" viewBox="0 0 1200 600"
-      style="background:#0d0d0d;display:block;margin:auto;" xmlns="http://www.w3.org/2000/svg">
-
-    <!-- BUS PRINCIPAL -->
-    <line id="bus" x1="200" y1="300" x2="1000" y2="300" stroke="#666" stroke-width="6"/>
-
-    <!-- Microcontrôleur (à gauche, agrandi) -->
-    <rect id="mcu" x="100" y="250" width="80" height="100" fill="#222" stroke="#0ff" stroke-width="3"/>
-    <text x="140" y="305" fill="#0ff" font-size="18" text-anchor="middle">MCU</text>
-    <line class="tap" data-comp="mcu" x1="180" y1="300" x2="200" y2="300" stroke="#444" stroke-width="3"/>
-
-    <!-- ROM pile au-dessus du MCU -->
-    <rect id="rom" x="100" y="150" width="80" height="60" fill="#222" stroke="#ff0" stroke-width="2"/>
-    <text x="140" y="185" fill="#ff0" font-size="14" text-anchor="middle">ROM</text>
-    <line class="tap" data-comp="rom" x1="140" y1="210" x2="140" y2="250" stroke="#444" stroke-width="3"/>
-
-    <!-- Capteur 1 -->
-    <rect id="cap1" x="400" y="100" width="60" height="60" fill="#222" stroke="#0f0" stroke-width="2"/>
-    <text x="430" y="130" fill="#0f0" font-size="14" text-anchor="middle">Sensor1</text>
-    <line class="tap" data-comp="cap1" x1="430" y1="160" x2="430" y2="300" stroke="#444" stroke-width="3"/>
-
-    <!-- Capteur 2 -->
-    <rect id="cap2" x="600" y="100" width="60" height="60" fill="#222" stroke="#0f0" stroke-width="2"/>
-    <text x="630" y="130" fill="#0f0" font-size="14" text-anchor="middle">Sensor2</text>
-    <line class="tap" data-comp="cap2" x1="630" y1="160" x2="630" y2="300" stroke="#444" stroke-width="3"/>
-
-    <!-- Actionneur -->
-    <rect id="act" x="400" y="400" width="60" height="60" fill="#222" stroke="#f0f" stroke-width="2"/>
-    <text x="430" y="430" fill="#f0f" font-size="14" text-anchor="middle">Actuator</text>
-    <line class="tap" data-comp="act" x1="430" y1="400" x2="430" y2="300" stroke="#444" stroke-width="3"/>
-
-    <!-- Timer -->
-    <rect id="timer" x="600" y="400" width="60" height="60" fill="#222" stroke="#f80" stroke-width="2"/>
-    <text x="630" y="430" fill="#f80" font-size="14" text-anchor="middle">Timer</text>
-    <line class="tap" data-comp="timer" x1="630" y1="400" x2="630" y2="300" stroke="#444" stroke-width="3"/>
-
-    <!-- DMA -->
-    <rect id="dma" x="800" y="100" width="60" height="60" fill="#222" stroke="#0ff" stroke-width="2"/>
-    <text x="830" y="130" fill="#0ff" font-size="14" text-anchor="middle">DMA</text>
-    <line class="tap" data-comp="dma" x1="830" y1="160" x2="830" y2="300" stroke="#444" stroke-width="3"/>
-
-    <!-- MEM (à droite, agrandi) -->
-    <rect id="mem" x="980" y="250" width="100" height="100" fill="#222" stroke="#ff0" stroke-width="3"/>
-    <text x="1030" y="305" fill="#ff0" font-size="18" text-anchor="middle">Memory</text>
-    <line class="tap" data-comp="mem" x1="980" y1="300" x2="1000" y2="300" stroke="#444" stroke-width="3"/>
-
-
-  </svg>
-</div>
-<div id="main-content">
-
-
-  <nav>
-	  <button onclick="showSection('About Me')">About Me</button>
-	  <button onclick="showSection('Resume')">Resume</button>
-	  <button onclick="showSection('Formation')">Formation</button>
-	  <button onclick="showSection('Projects')">Projects</button>
-	  <button onclick="showSection('Skills')">Skills</button>
-	  <button onclick="showSection('Certifications')">Certifications</button>
-	  <button onclick="showSection('Ambition')">Ambition</button>
-	  <button onclick="showSection('Events')">Events</button>
-	  <button onclick="showSection('Bibliotemple')">Bibliotemple</button>
-  </nav>
-
-  <div id="terminal">
-    <span class="blinking-cursor"></span>
-  </div>
-</div>
-  <script src="js/terminal.js"></script>
+    <h1>Work in progress</h1>
 </body>
+
 </html>
